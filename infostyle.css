@@ -50,37 +50,46 @@ margin-right: 25vw;
 }
 
 
-
 .infosuquesto {
   float: right;
-  margin-right: 0.3vw;
+  margin-right: 4px;
   font-family: souricon;
-  font-size: 2.5vw;
+  font-size: 30px;
   color: #C4C4C4;
-  align-items: center;
   position: relative;
   padding-bottom: 0;
-  height: 1vw;
-  width: 1vw;
+
 }
 
 .inrigameli{
   display: flex;
+    padding-right: 40px;
+}
+
+#nelletransiction{
+  display: flex;
+  padding-right: 20px;
+  position: absolute;
+  margin-left: 11%;
+  margin-top: -1.9%;
 }
 
 .infosuquesto .balloonsottoinfo {
   visibility: hidden;
-  width: 20vw;
+  width: 200px;
   background-color: #FF5880;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: 5px 0;
   position: absolute;
+  font-family: TTNormsRegular;
+  font-size: 10px;
+
   z-index: 1;
   top: 150%;
   margin: 0px;
-  margin-left: -9.5vw;
+  margin-left: -785%;
 }
 
 .infosuquesto .balloonsottoinfo::after {
@@ -106,6 +115,7 @@ margin-right: 25vw;
 
 .infosuquesto:hover .balloonsottoinfo {
   visibility: visible;
+  transition: 0.3s ease-in-out;
 }
 
 .infosuquesto:hover {
@@ -115,12 +125,12 @@ margin-right: 25vw;
 }
 
 .accountballoon{
-  margin-top: 0.5vw;
+  margin-top: 8%;
 }
 
 #sopradeidue{
 
-  margin-left: 12vw;
+  margin-left: 90%;
 }
 
 
