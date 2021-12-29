@@ -29,14 +29,11 @@
 
 #centrapage{
   display: flex;
-
+    justify-content: center;
 
 }
 
-.spaziopercentrare{
-  background-color: red;
-  width: 10vw;
-}
+
 
 #navbar {
   background-color: #FF5880;
@@ -231,103 +228,58 @@ text-align: center;
   width: 10vw;;
 }
 
+
+
+
+
+
+
+
+
+
 #domanda {
   font-family: TTNormsBold;
-  font-size: 3vw;
-  padding-top: 8vw;
-  padding-bottom: 3vw;
+  font-size: 30px;
+  padding-top: 8%;
+  padding-bottom: 3%;
   color: #333333;
 }
 
-.prova {
-  font-family: TTNormsBold;
-  font-size: 50px;
-  padding: 60px;
-  color: blue;
-}
-
-/*su che pagina siamo*/
-li.active {
-  background-color: white;
-}
 
 #container {
-  background-color: white;
   display: flex;
+  max-width: 900px;
+  max-height: 550px;
 }
 
 .dashbox {
   background-color: white;
   text-align: center;
   border-radius: 20px;
-  margin-right: 2vw;
+  margin-right: 2%;
   box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.3);
   font-family: TTNormsBold;
-  font-size: 1vw;
-  padding-top: 2vw;
+  font-size: 10px;
+  padding-top: 2%;
 }
 
-.puntodomanda {
-  float: right;
-  margin-right: 1.4vw;
-  border-radius: 5vw;
-  border-style: solid;
-  border-color: #FF5880;
-  border-width: 0.15vw;
-  font-family: TTNormsBold;
-  font-size: 0.9vw;
-  background-color: white;
-  color: #FF5880;
-  padding: 0.2vw;
-  padding-top: 0vw;
-  width: 0.7vw;
-  line-height: 1.3;
-  height: 0.9vw;
-    margin-top: 0.5vw;
-}
 
 #puntodomandasettimana{
-    margin-top: -0.2vw;
+    margin-top: -0.2%;
 }
 
 #ingrandiscisettimana{
-    margin-top: -0.2vw;
+    margin-top: -0.2%;
 }
 
 #ingrandisciwallet{
-    margin-top: 0.9vw;
+    margin-top: 0.9%;
     position: absolute;
-    margin-left: 15vw;
+    margin-left: 15%;
     z-index: 1;
 }
 
 .puntodomanda:hover {
-  background-color: #FF5880;
-  transition: 0.3s ease-in-out;
-  color: white;
-  cursor: pointer;
-}
-
-.ingrandisci {
-  float: right;
-  margin-right: 0.3vw;
-  border-radius: 5vw;
-  border-style: solid;
-  border-color: #FF5880;
-  border-width: 0.15vw;
-  font-family: TTNormsBold;
-  font-size: 1vw;
-  background-color: white;
-  color: #FF5880;
-  padding: 0.2vw;
-  padding-top: 0vw;
-    line-height: 1.05;
-  width: 0.7vw;
-  height: 0.9vw;
-  margin-top: 0.5vw;
-}
-
-.ingrandisci:hover {
   background-color: #FF5880;
   transition: 0.3s ease-in-out;
   color: white;
@@ -404,17 +356,24 @@ li.active {
 
 
 #primacolonna {
-  margin-right: 2vw;
+  margin-right: 2%;
+  width: 25%;
+  max-height: 100%;
+}
+
+#partedx {
+  width: 75%;
+  margin-bottom: 0px;
 }
 
 #sceglioggetto {
   margin-right: 0px;
   display: flex;
+  margin-bottom: 9%;
 }
 
 #tagselected {
   width: 30%;
-  height: 5vw;
   background-color: #4852FE;
   margin-right: 0;
 }
@@ -422,21 +381,19 @@ li.active {
 #tagselected img {
   width: 100%;
   height: 100%;
-  margin-top: -0.8vw;
+  margin-top: -0.10%;
   display: flex;
   filter: drop-shadow(0px 19.2597px 19.2597px rgba(0, 0, 0, 0.5));
 }
 
 .spaceselector {
-  width: 2vw;
+  width: 5%;
   background-color: none;
 }
 
 #tagnotselected {
   width: 30%;
-  height: 5vw;
   background-color: white;
-  position: relative;
   margin-right: 0;
 }
 
@@ -448,13 +405,14 @@ li.active {
 #tagnotselected img {
   width: 100%;
   height: 100%;
-  margin-top: -0.8vw;
+  margin-top: -0.8%;
   display: flex;
 }
 
 #settimana {
-  width: 44vw;
-  height: 15vw;
+  width: 62%;
+  margin-right: 3%;
+  margin-bottom: 3%;
 }
 
 #inriga{
@@ -462,39 +420,39 @@ li.active {
 }
 
 #commento {
-  width: 20vw;
-  height: auto;
+  width: 35%;
   margin-right: 0px;
   padding-top: 0px;
+  margin-bottom: 3%;
 }
 
 #partesotto {
   display: flex;
+  margin-bottom: 0px;
+  height: 50%;
 }
 
-#partedx{
-
-}
 
 #duration {
-  height: 20vw;
-  width: 15vw;
+  width: 25%;
+  margin-right: 3%;
 }
 
 #hornymeter {
-  height: 20vw;
-  width: 15vw;
+  width: 25%;
+    margin-right: 3%;
 }
 
 #pacing {
-  height: 20vw;
-  width: 32vw;
+  width: 50%;
   margin: 0px;
 }
 
 #graficocommentino {
   display: flex;
-  margin-bottom: 2vw;
+  width: 100%;
+  margin-right: 0px;
+height: 50%;
 }
 
 #altodxalto {
@@ -606,11 +564,9 @@ li.active {
 
 
 #wallet {
-  height: 30vw;
-  margin-top: 2vw;
-  overflow-y: scroll;
   overflow-x: hidden;
   margin-right: 0;
+  max-height: 81%;
 }
 
 #totale {
@@ -745,7 +701,6 @@ table td {
 
 .container {
   margin: 30px auto;
-  background: pink;
   padding: 120px;
 }
 
@@ -756,7 +711,6 @@ table td {
 }
 
 .content {
-  max-height: 500px;
   overflow: auto;
 }
 
