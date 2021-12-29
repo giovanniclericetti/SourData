@@ -24,7 +24,6 @@
 }
 
 #accountpage{
-
 }
 
 #centrapage{
@@ -38,13 +37,14 @@
 #navbar {
   background-color: #FF5880;
   position: fixed;
-  height: 50px;
+  height: 45px;
   width: 101%;
   font-family: TTNormsBold;
-  font-size: 12px;
-  margin: -1vw;
-  margin-top: -1vw;
+  font-size: 11px;
+  margin: -10px;
+  margin-top: -10px;
   z-index: 20;
+  justify-content: center;
 }
 
 
@@ -57,11 +57,9 @@
   display: block;
   color: white;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 16px;
+
   text-decoration: none;
-  padding-top: 18px;
-  height: 50px;
 }
 
 .li a:hover {
@@ -71,7 +69,7 @@
 }
 
 #about {
-  margin-right: 4vw;
+  margin-right: 55px;
 }
 
 .dx {
@@ -79,16 +77,19 @@
 }
 
 #logo img {
-  padding: 0.9vw 5vw;
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 45px;
   overflow: hidden;
   float: left;
   opacity: 0.8;
-  width: 2.8vw;
+  width: 35px;
 }
 
 #logo img:hover {
   opacity: 1;
   transition: 0.3s ease-in-out;
+  cursor:
 }
 
 #footer {
@@ -104,20 +105,26 @@
 
 #shoppingbag{
   position: absolute;
-  top: 2.8vw;
-  left: 74vw;
-  right: 50vw;
+  top: 35px;
+  right: 157px;
   align-content: center;
   z-index: 1;
-  width: 15vw;
-  height: 5vw;
+  width: 150px;
   opacity:0;
   display: none;
+  height: 100px;
 
 }
 
+#informa {
+  font-family: souricon;
+  font-size: 35px;
+}
+
 #carrellosksk a {
-  padding-bottom: 2vw;
+  padding-top: 15px;
+  font-family: souricon;
+  font-size: 35px;
 }
 
 #carrellosksk a:hover {
@@ -138,25 +145,25 @@
 }
 
 #triangolino {
-  height: 12vw;
+  height: 140px;
   width: 100%;
   background-color: white;
   border-radius: 2vw;
   box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.3);}
 
 #empty{
-height: 40%;
+height: 35%;
 border-bottom-style: solid;
 border-bottom-width: 0.1vw;
 color: #C4C4C4;
-margin-left: 1vw;
-margin-right: 1vw;
-line-height: 5.5vw;
+margin-left: 10px;
+margin-right: 10px;
+line-height: 5.5;
 text-align: center;
 }
 
 .scrittacarello{
-  margin-left: 0.6vw;
+  margin-left: 10px;
   font-family: 'TTNormsRegular';
 
 }
@@ -173,9 +180,10 @@ text-align: center;
     border-bottom-color: #C4C4C4;
   border-bottom-width: 0.1vw;
   color: rgba(56,	66,	241, 1);
-  margin-left: 1vw;
-  margin-right: 1vw;
-  padding: 0.4vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  padding-top: 7px;
   display: flex;
 }
 
@@ -189,19 +197,21 @@ text-align: center;
     border-bottom-color: #C4C4C4;
   border-bottom-width: 0.1vw;
   color: rgba(56,	66,	241, 1);
-  margin-left: 1vw;
-  margin-right: 1vw;
-    padding: 0.4vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  padding-top: 7px;
       display: flex;
 }
 
 #orders{
 
   color: rgba(56,	66,	241, 1);
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  padding-top: 7px;
   font-family: 'TTNormsRegular';
-    padding: 0.4vw;
       display: flex;
 }
 
