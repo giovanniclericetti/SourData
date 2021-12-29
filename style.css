@@ -38,11 +38,10 @@
 #navbar {
   background-color: #FF5880;
   position: fixed;
-  height: 3.8vw;
+  height: 50px;
   width: 101%;
-  margin: 0;
   font-family: TTNormsBold;
-  font-size: 0.9vw;
+  font-size: 12px;
   margin: -1vw;
   margin-top: -1vw;
   z-index: 20;
@@ -58,8 +57,11 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 1.4vw;
+  padding-left: 15px;
+  padding-right: 15px;
   text-decoration: none;
+  padding-top: 18px;
+  height: 50px;
 }
 
 .li a:hover {
