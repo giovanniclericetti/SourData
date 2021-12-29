@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<head>
+  <title> SourData</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="infostyle.css">
+  <link rel="icon" type="image/svg" href="logo/icon.svg">
+</head>
+
+<body>
+
+
+
+
+  <div id="navbar">
+    <div id="logo"> <img src="logo/logo.svg" alt="Logo"> </div>
+
+
+      <div class="li"><a href="hub.html">HUB</a></div>
+      <div class="li"><a href="coomy.html">COOMY</a></div>
+      <div class="li"><a href="wheezy.html">WHEEZY</a></div>
+      <div class="li"><a href="poopy.html">POOPY</a></div>
+      <div class="li dx" id="about"><a href="account.html">ABOUT MARK</a></div>
+      <div class="li dx"><a href="info.html">(?)</a></div>
+      <div class="li dx" id="carrellosksk"> <a> (C) </a>
+
+      <div  id="shoppingbag" class="hide" > <div id="containertriangolo">  <div id="vuoto"> </div>
+      <div id="triangoloalto"> </div> <div id="vuoto"> </div> </div>
+      <div id="triangolino">
+      <div id="empty"> Your Bag is empty. </div>
+      <div id="bag"> <img src="logo/bag.svg"> <div class="scrittacarello"> Bag </div> </div>
+      <div id="saveditems"> <img src="logo/saveditems.svg"> <div class="scrittacarello"> Saved Items </div> </div>
+      <div id="orders"> <img src="logo/orders.svg"> <div class="scrittacarello"> Orders </div> </div> </div>
+  </div>
+   </div>
+  </div>
+
+
+<div id="centrapage">
+
+  <div class="spaziopercentrare"> </div>
+
+  <div id="accountpage">
+
+  <div id="domanda"> Mark, the results of your efforts </div>
+
+  <div id="container">
+
+    <div id="primacolonna">
+
+      <div id="sceglioggetto">
+        <div class="dashbox" id="tagselected"> <img src="logo/coomy.png"> </div>
+        <div class="spaceselector"> </div>
+        <div class="dashbox" id="tagnotselected"> <img src="logo/poopy.png"> </div>
+        <div class="spaceselector"> </div>
+        <div class="dashbox" id="tagnotselected"> <img src="logo/wheezy.png"> </div>
+      </div>
+
+      <div class="dashbox" id="wallet">
+        <div id="totale">
+          <div id="testisoldi">
+            <div id="soldicoomy">9,20€ </div>
+            <div id="tuttisoldi"> TOTAL: 47,80€ </div>
+          </div>
+          <img src="logo/transaction.svg" alt="Logo">
+
+        </div>
+
+        <div id="inriga">
+        <div id="titletransaction"> RECENT TRANSACTIONS </div>
+        <div class="ingrandisci" id="ingrandisciwallet" data-balloon="Tempo impiegato registrato durante l'azione" data-balloon-pos="down">+ </div>
+
+      </div>
+
+
+
+
+        <div id="table">
+
+          <table>
+
+            <tr id="taggatocoomy">
+              <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Coomy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+3,50€</td>
+            </tr>
+
+            <tr id="taggatopoopy">
+              <td class="col1"> <img src="logo/tagpoopy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Poopy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+2,80€</td>
+            </tr>
+
+            <tr id="taggatowheezy">
+              <td class="col1"> <img src="logo/tagwheezy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Wheezy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+1,70€</td>
+            </tr>
+
+            <tr id="taggatocoomy">
+              <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Coomy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+2,30€</td>
+            </tr>
+
+            <tr id="taggatopoopy">
+              <td class="col1"> <img src="logo/tagpoopy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Poopy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+1,40€</td>
+            </tr>
+
+            <tr id="taggatocoomy">
+              <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Coomy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+4,20€</td>
+            </tr>
+
+            <tr id="taggatowheezy">
+              <td class="col1"> <img src="logo/tagwheezy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Wheezy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+2,20€</td>
+            </tr>
+
+            <tr id="taggatocoomy">
+              <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Coomy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+1,50€</td>
+            </tr>
+
+            <tr id="taggatopoopy">
+              <td class="col1"> <img src="logo/tagpoopy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Poopy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+0,90€</td>
+            </tr>
+
+            <tr id="taggatocoomy">
+              <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+              <td class="col2">
+                <div class="titolinowallet"> Coomy </div>
+                <div class="scrittomini"> 10/12/2021 </div>
+              </td>
+              <td class="col3">+4,80€</td>
+            </tr>
+
+
+
+
+
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="partedx">
+      <div id="graficocommentino">
+
+        <div class="dashbox" id="settimana">
+          <div id="inriga">
+          <div id="testinografico"> GRAFICO SETTIMANA </div>
+
+
+          <div class="piuedomanda"    >
+          <div class="infosuquesto accountballoon" id="inrigaballon"> +
+
+
+                      <div class="balloonsottoinfo"> Duration: More Info </div>
+                    </div>
+
+                    <div class="infosuquesto accountballoon" id="inrigaballon"> -
+
+
+                      <div class="balloonsottoinfo"> Duration: Question </div>
+                    </div>
+
+                  </div>
+
+
+
+</div>
+          <div class="divisionesettimana">
+
+
+          <div class="chartBox">
+
+
+            <canvas id="myChart" height="90%"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+              //setup block
+
+              const data = {
+
+
+                datasets: [{
+                  label: 'A', //INSERIRE NOI
+                  data: [
+
+{ x: 1, y: 2, r: 8},
+{ x: 2, y: 5, r: 11},
+{ x: 3, y: 8, r: 7},
+{ x: 3, y: 2, r: 12},
+{ x: 4, y: 5, r: 10},
+{ x: 5, y: 3, r: 9},
+{ x: 6, y: 6, r: 5},
+{ x: 7, y: 2, r: 11}
+
+                  ],
+                  backgroundColor: [
+                    'rgba(56,	66,	241, 0.8)',
+
+                  ],
+                  borderColor: [
+                    'rgba(56,	66,	241, 1)',
+
+                  ],
+                  borderWidth: 2,
+                  clip: {left: false, top: false, right: false, bottom:false}
+                }]
+
+
+              };
+
+              //config block
+
+              const config = {
+                type: 'bubble',
+                data,
+                options: {
+                  plugins: {
+                    legend: {display: false},
+                    tooltip: {
+
+                      backgroundColor: '#FF5880',
+                      titleColor: '#00ffff',
+                      xAlign: 'center',
+                      yAlign: 'top',
+                    }
+                  }
+                  ,
+                  layout: {
+                    padding: {left: 20, right:30, top:20, bottom:20}
+                  },
+                  scales: {
+
+                    x: {
+                              type: 'category',
+                              grid: {
+                                borderColor: 'rgba(56,	66,	241, 1)',
+                                color: 'rgba(56,	66,	241, 1)',
+                                 tickColor: 'rgba(56,	66,	241, 1)',
+                            },
+                            ticks: {
+                              color: 'rgba(56,	66,	241, 1)'},
+
+                              labels: ['02/02', '03/02', '04/02', '05/02', '06/02', '07/02', '08/02'],
+
+                               },
+
+
+                    y: {
+
+                      beginAtZero: true,
+                      grid: {
+                        borderColor: 'rgba(56,	66,	241, 1)',
+                        color: 'rgba(56,	66,	241, 0.1)',
+                    },
+
+                    ticks: {color: 'rgba(56,	66,	241, 1)', display: false},
+
+                    }
+                  }
+                }
+              };
+
+              //init render block
+
+              const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+
+              );
+            </script>
+
+
+          </div>
+        </div></div>
+
+
+        <div class="dashbox" id="commento">
+
+          <div id="altodxalto">
+            <div id="profilephoto"> <img src="logo/man.png"> </div>
+            <div id="dati">
+              <div id="name"> Mark Rubins </div>
+              <div id="sudilui"> Architect </div>
+              <div id="posto">
+                <div id="iconposto"> <img src="logo/place.svg"> </div>
+
+                <div id="place"> Milan, Italy </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="altodxbasso">
+
+            <div class="dxcpw">
+              <div> <img src="logo/tagcoomy.png"> </div> 36min
+            </div>
+            <div class="dxcpw" id="centrale">
+              <div> <img src="logo/tagpoopy.png"> </div> 110min
+            </div>
+            <div class="dxcpw" id="nomargin">
+              <div> <img src="logo/tagwheezy.png"> </div> 21min
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <div id="partesotto">
+
+        <div class="dashbox" id="duration"> DURATION
+
+          <div class="illustration"> <img src="logo/duration.png"> </div>
+
+          <div class="commentoni"> 6min </div>
+          <div class="commentini"> Neither great <br> nor terrible </div>
+
+          <div class="infosuquesto accountballoon" id="sopradeidue"> +
+
+
+            <div class="balloonsottoinfo"> Duration: More Info </div>
+          </div>
+
+          <div class="infosuquesto accountballoon" > -
+
+
+            <div class="balloonsottoinfo"> Duration: Question </div>
+          </div>
+
+        </div>
+
+        <div class="dashbox" id="hornymeter"> HORNY METER
+
+          <div class="illustration"> <img src="logo/hornymeter.png"> </div>
+
+          <div id="punteggio">
+            <div class="spazio"> </div>
+            <div class="commentoni"> 104 </div>
+
+            <div id="numerino">
+              <div> +12 </div>
+              <div class="frecciapunteggio"> <img src="logo/frecciapunteggio.svg"> </div>
+
+            </div>
+
+            <div class="spazio"> </div>
+          </div>
+          <div class="commentini"> Neither great <br> nor terrible </div>
+
+<div class="inrigameli">
+
+          <div class="infosuquesto accountballoon" id="sopradeidue"> i
+
+            <div class="balloonsottoinfo"> Giorgia Fulghieri, Giovanni Clericetti, Edoardo Ceriani, Francesco Nozza, <br> Marco Zagaria, Maurizio Eddina </div>
+          </div>
+
+
+
+          <div class="infosuquesto accountballoon"> d
+
+
+            <div class="balloonsottoinfo"> Giorgia Fulghieri, Giovanni Clericetti, Edoardo Ceriani, Francesco Nozza, <br> Marco Zagaria, Maurizio Eddina </div>
+          </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="dashbox" id="pacing"> PACING </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+  <div class="spaziopercentrare"> </div>
+
+<div id="footer"> <img src="logo/powered.svg" alt="Powered"> </div>
+
+  </div>
+</div>
+  </div>
+</body>
+
+</html>
