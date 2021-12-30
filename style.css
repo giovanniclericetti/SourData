@@ -89,7 +89,7 @@
 #logo img:hover {
   opacity: 1;
   transition: 0.3s ease-in-out;
-  cursor:
+  cursor: pointer;
 }
 
 #footer {
@@ -260,7 +260,7 @@ text-align: center;
 #container {
   display: flex;
   max-width: 900px;
-  max-height: 550px;
+  max-height: 500px;
 }
 
 .dashbox {
@@ -363,6 +363,7 @@ text-align: center;
   width: 37vw;
   text-align: left;
   margin-left: 2vw;
+  color: #FF5880;
 }
 
 
@@ -424,10 +425,287 @@ text-align: center;
   width: 62%;
   margin-right: 3%;
   margin-bottom: 3%;
+  padding: 2%;
+
+
 }
 
-#inriga{
+
+
+
+
+
+.sottodiviso{
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
   display: flex;
+}
+
+#lineatemporale{
+  width: 85%;
+  height: 100%;
+  position: relative;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
+  grid-template-rows: 20% 20% 20% 20% 5%;
+height: 100%;
+  font-family: TTNormsRegular;
+}
+
+.grid-item {
+  border-top: 1px dotted rgba(72,82,254, 0.2) ;
+  border-right: 1px solid rgba(72,82,254, 1);
+}
+
+.sotto{
+  padding-top: 4px;
+  font-family: TTNormsBold;
+  color: rgba(72,82,254, 1);
+}
+
+.vuotoinizio{
+border: 0px;
+border-top: 1px solid rgba(72,82,254, 0.2);
+
+}
+
+.giorno1{
+    border-left: 1.5px solid rgba(72,82,254, 1);
+}
+
+
+.orarigiusti{
+  width: 7%;
+justify-content: center;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 10% 20% 20% 20% 20%;
+height: 100%;
+font-family: TTNormsRegular;
+align-items: center;
+padding-left: 3%;
+
+}
+
+.ore{
+
+
+font-family: TTNormsRegular;
+text-align: left;
+font-size: 8px;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(72,82,254, 0.7);
+  border: 2px solid rgba(72,82,254, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+.dot1{
+  height: 20px;
+  width: 20px;
+  margin-top: 10%;
+}
+
+.dot2{
+  height: 15px;
+  width: 15px;
+  margin-top: 0%;
+}
+
+
+.dot3{
+  height: 25px;
+  width: 25px;
+  margin-top: 20%;
+}
+
+
+.dot4{
+  height: 32px;
+  width: 32px;
+  margin-top: 0%;
+}
+
+.dot5{
+  height: 15px;
+  width: 15px;
+  margin-top: 0%;
+
+}
+
+.dot6{
+  height: 20px;
+  width: 20px;
+  margin-top: 30%;
+}
+
+.dot7{
+  height: 24px;
+  width: 24px;
+  margin-top: 10%;
+}
+
+.dot8{
+  height: 20px;
+  width: 20px;
+  margin-top: 30%;
+}
+
+.dot9{
+  height: 15px;
+  width: 15px;
+    margin:30%;
+  margin-top: 0%;
+
+}
+
+.dotesame{
+  height: 10px;
+  width: 10px;
+  margin-top: 50%;
+}
+
+.dot:hover {
+  background-color: rgba(72,82,254, 1);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+
+.dot .infogiorno {
+  visibility: hidden;
+  width: 80px;
+  background-color: #FF5880;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  font-family: TTNormsRegular;
+  font-size: 10px;
+
+
+  top: 10%;
+  right: 37%;
+  left: 40.5%;
+
+}
+
+.dot .infogiorno::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #FF5880 transparent;
+}
+
+.dot:hover .infogiorno {
+  visibility: visible;
+  transition: 0.3s ease-in-out;
+}
+
+
+.accountballoon{
+  margin-top: 8%;
+}
+
+
+#infogiorno1{
+  top: 55%;
+  right: 90%;
+  left: -2%;
+}
+
+#infogiorno2{
+  top: 30%;
+  right: 90%;
+  left: 12%;
+}
+
+#infogiorno3{
+  top: 79%;
+  right: 90%;
+  left: 12%;
+}
+
+#infogiorno4{
+  top: 58%;
+  right: 90%;
+  left: 26.5%;
+}
+
+#infogiorno6{
+  top: 39%;
+  right: 90%;
+  left: 55%;
+}
+
+#infogiorno7{
+  top: 75%;
+  right: 90%;
+  left: 55%;
+}
+
+#infogiorno8{
+  top: 59%;
+  right: 100%;
+  left: 69.4%;
+}
+
+#infogiorno9{
+  top: 59%;
+  right: 90%;
+  left: 69.3%;
+}
+
+#infogiorno9{
+  top: 10%;
+  right: 90%;
+  left: 83.8%;
+}
+
+#infogiornoesame{
+  top: 40%;
+  right: 90%;
+  left: 83.8%;
+}
+
+
+
+
+
+
+
+.orario{
+  text-align: right;
+
+}
+
+
+
+
+.nodxline{
+  border-right: 0px;
+}
+
+.notopline{
+  border-top: 0px;
 }
 
 #commento {

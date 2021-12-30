@@ -199,24 +199,87 @@
       <div id="graficocommentino">
 
         <div class="dashbox" id="settimana">
-          <div id="inriga">
+
           <div id="testinografico"> GRAFICO SETTIMANA </div>
 
+          <div class="sottodiviso">
 
-          <div class="piuedomanda"    >
-          <div class="infosuquesto accountballoon" id="inrigaballon"> +
+            <div class="orarigiusti">
+
+              <div class="ore">  </div>
+              <div class="ore"> 06.00 </div>
+              <div class="ore"> 12.00 </div>
+              <div class="ore"> 18.00 </div>
+              <div class="ore"> 24.00 </div>
+              <div class="ore">  </div>
 
 
-                      <div class="balloonsottoinfo"> Duration: More Info </div>
-                    </div>
-
-                    <div class="infosuquesto accountballoon" id="inrigaballon"> -
 
 
-                      <div class="balloonsottoinfo"> Duration: Question </div>
-                    </div>
 
-                  </div>
+
+
+            </div>
+
+          <div id="lineatemporale">
+
+            <div class="grid-container">
+
+
+              <div class="vuotoinizio grid-item notopline"></div>
+
+              <div class="giorno1 grid-item notopline"> </div>
+              <div class="giorno2 grid-item notopline">     </div>
+              <div class="giorno3 grid-item notopline">  </div>
+              <div class="giorno4 grid-item notopline"> <div class="dot dot5"> <div class="infogiorno" id="infogiorno5"> 09.04 - 09.17 </div> </div> </div>
+              <div class="giorno5 grid-item notopline">  </div>
+              <div class="giorno6 grid-item notopline"> </div>
+              <div class="giorno7 grid-item notopline"> <div class="dot dot9"> <div class="infogiorno" id="infogiorno9"> 09.04 - 09.17 </div> </div> </div>
+
+  <div class="vuotoinizio grid-item "></div>
+              <div class="giorno1 grid-item"></div>
+              <div class="giorno2 grid-item"> <div class="dot dot2"> <div class="infogiorno" id="infogiorno2"> 09.04 - 09.17 </div> </div> </div>
+              <div class="giorno3 grid-item"> </div>
+              <div class="giorno4 grid-item"></div>
+              <div class="giorno5 grid-item"> <div class="dot dot6"> <div class="infogiorno" id="infogiorno6"> 09.04 - 09.17 </div> </div> </div>
+              <div class="giorno6 grid-item"></div>
+              <div class="giorno7 grid-item"> <div class="dot dotesame"> <div class="infogiorno" id="infogiornoesame"> 09.04 - 09.17 </div> </div> </div>
+
+
+  <div class="vuotoinizio grid-item "></div>
+              <div class="giorno1 grid-item"> <div class="dot dot1"> <div class="infogiorno" id="infogiorno1"> 09.04 - 09.17 </div> </div>   </div>
+              <div class="giorno2 grid-item"></div>
+              <div class="giorno3 grid-item"><div class="dot dot4"> <div class="infogiorno" id="infogiorno4"> 09.04 - 09.17 </div> </div></div>
+              <div class="giorno4 grid-item"></div>
+              <div class="giorno5 grid-item"> </div>
+              <div class="giorno6 grid-item"> <div class="dot dot8"> <div class="infogiorno" id="infogiorno8"> 09.04 - 09.17 </div> </div> </div>
+              <div class="giorno7 grid-item"></div>
+
+  <div class="vuotoinizio grid-item "></div>
+              <div class="giorno1 grid-item"> </div>
+              <div class="giorno2 grid-item"> <div class="dot dot3"> <div class="infogiorno" id="infogiorno3"> 09.04 - 09.17 </div> </div></div>
+              <div class="giorno3 grid-item"></div>
+              <div class="giorno4 grid-item"></div>
+              <div class="giorno5 grid-item"> <div class="dot dot7"> <div class="infogiorno" id="infogiorno7"> 09.04 - 09.17 </div> </div> </div>
+              <div class="giorno6 grid-item">  </div>
+              <div class="giorno7 grid-item"></div>
+
+  <div class="vuotoinizio grid-item "></div>
+              <div class="giorno1 grid-item sotto">02.02</div>
+              <div class="giorno2 grid-item sotto">03.02</div>
+              <div class="giorno3 grid-item sotto">04.02</div>
+              <div class="giorno4 grid-item sotto">05.02</div>
+              <div class="giorno5 grid-item sotto">06.02</div>
+              <div class="giorno6 grid-item sotto">07.02</div>
+              <div class="giorno7 grid-item sotto">08.02</div>
+
+
+            </div>
+
+
+
+</div>
+
 
 
 
@@ -224,109 +287,9 @@
           <div class="divisionesettimana">
 
 
-          <div class="chartBox">
 
 
-            <canvas id="myChart" height="90%"></canvas>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script>
-              //setup block
 
-              const data = {
-
-
-                datasets: [{
-                  label: 'A', //INSERIRE NOI
-                  data: [
-
-{ x: 1, y: 2, r: 8},
-{ x: 2, y: 5, r: 11},
-{ x: 3, y: 8, r: 7},
-{ x: 3, y: 2, r: 12},
-{ x: 4, y: 5, r: 10},
-{ x: 5, y: 3, r: 9},
-{ x: 6, y: 6, r: 5},
-{ x: 7, y: 2, r: 11}
-
-                  ],
-                  backgroundColor: [
-                    'rgba(56,	66,	241, 0.8)',
-
-                  ],
-                  borderColor: [
-                    'rgba(56,	66,	241, 1)',
-
-                  ],
-                  borderWidth: 2,
-                  clip: {left: false, top: false, right: false, bottom:false}
-                }]
-
-
-              };
-
-              //config block
-
-              const config = {
-                type: 'bubble',
-                data,
-                options: {
-                  plugins: {
-                    legend: {display: false},
-                    tooltip: {
-
-                      backgroundColor: '#FF5880',
-                      titleColor: '#00ffff',
-                      xAlign: 'center',
-                      yAlign: 'top',
-                    }
-                  }
-                  ,
-                  layout: {
-                    padding: {left: 20, right:30, top:20, bottom:20}
-                  },
-                  scales: {
-
-                    x: {
-                              type: 'category',
-                              grid: {
-                                borderColor: 'rgba(56,	66,	241, 1)',
-                                color: 'rgba(56,	66,	241, 1)',
-                                 tickColor: 'rgba(56,	66,	241, 1)',
-                            },
-                            ticks: {
-                              color: 'rgba(56,	66,	241, 1)'},
-
-                              labels: ['02/02', '03/02', '04/02', '05/02', '06/02', '07/02', '08/02'],
-
-                               },
-
-
-                    y: {
-
-                      beginAtZero: true,
-                      grid: {
-                        borderColor: 'rgba(56,	66,	241, 1)',
-                        color: 'rgba(56,	66,	241, 0.1)',
-                    },
-
-                    ticks: {color: 'rgba(56,	66,	241, 1)', display: false},
-
-                    }
-                  }
-                }
-              };
-
-              //init render block
-
-              const myChart = new Chart(
-                document.getElementById('myChart'),
-                config
-
-              );
-            </script>
-
-
-          </div>
         </div></div>
 
 
@@ -419,7 +382,113 @@
             </div>
 
         </div>
-        <div class="dashbox" id="pacing"> PACING </div>
+        <div class="dashbox" id="pacing"> PACING
+
+          <div class="chartBox">
+
+
+            <canvas id="myChart"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+              //setup block
+
+              const data = {
+
+
+                datasets: [{
+                  label: 'A', //INSERIRE NOI
+                  data: [
+
+          { x: 1, y: 2, r: 8},
+          { x: 2, y: 5, r: 11},
+          { x: 3, y: 8, r: 7},
+          { x: 3, y: 2, r: 12},
+          { x: 4, y: 5, r: 10},
+          { x: 5, y: 3, r: 9},
+          { x: 6, y: 6, r: 5},
+          { x: 7, y: 2, r: 11}
+
+                  ],
+                  backgroundColor: [
+                    'rgba(56,	66,	241, 0.8)',
+
+                  ],
+                  borderColor: [
+                    'rgba(56,	66,	241, 1)',
+
+                  ],
+                  borderWidth: 2,
+                  clip: {left: false, top: false, right: false, bottom:false}
+                }]
+
+
+              };
+
+              //config block
+
+              const config = {
+                type: 'bubble',
+                data,
+                options: {
+                  plugins: {
+                    legend: {display: false},
+                    tooltip: {
+
+                      backgroundColor: '#FF5880',
+                      titleColor: '#00ffff',
+                      xAlign: 'center',
+                      yAlign: 'top',
+                    }
+                  }
+                  ,
+                  layout: {
+                    padding: {left: 20, right:30, top:20, bottom:20}
+                  },
+                  scales: {
+
+                    x: {
+                              type: 'category',
+                              grid: {
+                                borderColor: 'rgba(56,	66,	241, 1)',
+                                color: 'rgba(56,	66,	241, 1)',
+                                 tickColor: 'rgba(56,	66,	241, 1)',
+                            },
+                            ticks: {
+                              color: 'rgba(56,	66,	241, 1)'},
+
+                              labels: ['02/02', '03/02', '04/02', '05/02', '06/02', '07/02', '08/02'],
+
+                               },
+
+
+                    y: {
+
+                      beginAtZero: true,
+                      grid: {
+                        borderColor: 'rgba(56,	66,	241, 1)',
+                        color: 'rgba(56,	66,	241, 0.1)',
+                    },
+
+                    ticks: {color: 'rgba(56,	66,	241, 1)', display: false},
+
+                    }
+                  }
+                }
+              };
+
+              //init render block
+
+              const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+
+              );
+            </script>
+
+
+          </div>
+
+        </div>
       </div>
     </div>
 
