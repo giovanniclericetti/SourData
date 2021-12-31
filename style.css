@@ -23,6 +23,165 @@
   src: url("fonts/souricon.ttf") format("truetype");
 }
 
+body{
+  overflow-x: hidden;
+  margin-left: 0px;
+}
+
+
+.homepage{
+font-family: TTNormsRegular;
+text-align: center;
+}
+
+
+.sfondohome{
+  width: 100vw;
+  position: relative;
+  justify-content: center;
+
+}
+
+.sfondohome img{
+max-width: 100%;
+}
+
+
+.testihome{
+  padding-left: 60px;
+  position: absolute;
+    top: 20vw;
+    font-family: TTNormsBlack;
+    font-size: 3vw;
+    color: #FF5880;
+text-align: left;
+}
+
+.testohome1 {
+  width: 40vw;
+}
+
+.testohome2 {
+  margin-top: 2vh;
+  width: 35vw;
+}
+
+.buttonabout {
+  margin-top: 3vh;
+  font-family: TTNormsBold;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #FF5880;
+    color: white;
+    text-align: center;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.buttonabout a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttonabout:hover a{
+    text-decoration: none;
+    color: #FF5880;
+      transition: 0.3s ease-in-out;
+}
+
+.buttonabout:hover{
+    background-color: white;
+    color: #FF5880;
+  transition: 0.3s ease-in-out;
+  }
+
+
+.prodotti{
+  width: 100vw;
+  height: auto;
+  margin: 0px;
+  justify-content: center;
+  display: flex;
+}
+
+.boxvideoteaser{
+  width: 100vw;
+  margin: 0px;
+  justify-content: center;
+}
+
+.boxhome{
+  width: 20%;
+  height: 22vw;
+  background-color: red;
+  margin: 0px 10px 0px 10px;
+  border-radius: 20px;
+}
+
+.videoteaser{
+  width: 70%;
+  margin: 0px 10px 0px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.spiegazione{
+  width: 100vw;
+  height: auto;
+  margin: 0px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.testospiega{
+  margin: 20px;
+  font-family: TTNormsBold;
+  font-size: 20px;
+  color: #FF5880;
+    margin-top: 50px;
+}
+
+.boxspiega{
+  width: 10%;
+  height: 10vw;
+  background-color: #F4F4F4;
+  margin: 0px 10px 0px 10px;
+  border-radius: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+
+#footerhome {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  color: white;
+  text-align: center;
+  margin-top: 4vw;
+}
+
+#footerhome img {
+  width: 100px;
+}
+
+.scrittefooter{
+  font-size: 10px;
+  color: #333333;
+  margin-top: 5px;
+  line-height: 15px;
+}
+
+
+
+
+
+
+
 #accountpage{
 }
 
