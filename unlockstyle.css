@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+  font-family: TTNormsBold;
+  color: white;
+  text-align: center;
+}
+
+
+
+.sfondo {
+  background: radial-gradient(50% 50% at 50% 50%, #FF5880 0%, #FF426F 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.logounlock img{
+  width: 50px;
+}
+
+.logounlock{
+  padding-top: 5vh;
+}
+
+
+.containerunlock {
+  align-items: center;
+  margin-top: 35vh;
+  position: absolute;
+  justify-content: center;
+  width: 100vw;
+}
+
+.domanda {
+  padding-bottom: 3vh;
+  font-size: 18px;
+}
+
+.answer {
+  font-size: 12px;
+  padding: 10px;
+  background-color: white;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  color: #FF5880;
+  margin: 0 20px 0 20px;
+  width: 200px;
+}
+
+.answer a {
+  text-decoration: none;
+  color: #FF5880;
+}
+
+
+.answer:hover {
+
+  transition: 0.3s ease-in-out;
+  font-family: TTNormsBlack;
+}
+
+.white {
+  color: white;
+}
+
+.stickerunlock img {
+  width: 150px;
+}
+
+.centraopzioni {
+  position: relative;
+}
+
+#yessticker {
+  top: -25px;
+  left: 50px;
+  position: absolute;
+  transform: rotate(-7deg);
+  width: 50px;
+  display: none;
+}
+
+#yesanswer:hover+#yessticker {
+  opacity: 1;
+  display: block;
+}
+
+#yessticker:hover {
+  cursor: pointer;
+}
+
+#yessticker:hover+#yesanswer {
+  font-family: TTNormsBlack;
+}
+
+#nosticker {
+  top: -35px;
+  left: 55px;
+  position: absolute;
+  transform: rotate(7deg);
+  width: 50px;
+  display: none;
+    text-decoration: none;
+}
+
+
+#noanswer:hover+#nosticker {
+  opacity: 1;
+  display: block;
+    cursor: not-allowed;
+
+}
+
+#nosticker:hover {
+cursor: not-allowed;
+}
+
+#nosticker:hover+#noanswer {
+  font-family: TTNormsBlack;
+  cursor: not-allowed;
+
+}
+
+#footerunlock {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  color: white;
+  text-align: center;
+  margin-bottom: 3vh;
+  position: absolute;
+}
