@@ -366,13 +366,12 @@
               <div id="altodxalto">
                 <div id="profilephoto"> <img src="logo/man.png"> </div>
                 <div id="dati">
-                  <div id="name"> Mark Rubins </div>
-                  <div id="sudilui"> Architect </div>
-                  <div id="posto">
-                    <div id="iconposto"> <img src="logo/place.svg"> </div>
+                  <div id="name"> Mark Range </div>
+                  <div id="sudilui"> @markrange99 </div>
 
-                    <div id="place"> Milan, Italy </div>
-                  </div>
+
+                    <div id="place"> markrange@gmail.com </div>
+              
 
                 </div>
               </div>
@@ -450,23 +449,47 @@
               </div>
 
             </div>
-            <div class="dashbox" id="pacing"> PACING
+            <div class="dashbox" id="pacing">
+
+
+
+                <div class=" flex">
+
+              <div class="scrittapacing">
+              PACING </div>
+
+
+
+              <div class="inrigameli larghezzapacing ">
+
+                <div class="infosuquesto accountballoon" id="sopradeidue" style="margin-top: 0px;"> p
+
+                  <div class="balloonsottoinfo " > Giorgia Fulghieri, Giovanni Clericetti, Edoardo Ceriani, Francesco Nozza, <br> Marco Zagaria, Maurizio Eddina </div>
+                </div>
+
+                <div class="infosuquesto accountballoon" style="margin-top: 0px;"> d
+
+                  <div class="balloonsottoinfo"> Giorgia Fulghieri, Giovanni Clericetti, Edoardo Ceriani, Francesco Nozza, <br> Marco Zagaria, Maurizio Eddina </div>
+                </div>
+
+            </div>
+          </div>
 
               <div class="chartBox">
 
 
 
-                <canvas id="myChart" width="100%"></canvas>
+                <canvas id="myChart" style="height: 135px; width: 600px;"></canvas>
 
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script>
-                  const labels = [1.00, 1.10, 80, 81, 56, 55, 40, 23, 45, 76];
+                  const labels = [  ];
 
                   const data = {
                     labels: labels,
                     datasets: [{
                       label: 'My First Dataset',
-                      data: [20, 65, 20, 80, 15, 56, 07, 40, ],
+                      data: [20, 65, 20, 80, 15, 56, 07, 40, 15, 56, 07, 40, 50, 80, 20, 65, 23, 80, 5, 56, 17, 40, 80, 15, 56, 07, 40, 15, 56, 07,],
                       fill: false,
                       borderColor: 'rgba(72,82,254, 1)',
                       tension: 0.4
@@ -522,7 +545,7 @@
                               family: 'TTNormsRegular'
                             }},
 
-                          labels: ['0.0', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5'],
+                          labels: ['0.0', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', ],
 
                         },
 
@@ -536,18 +559,30 @@
 
 
                           },
-
+                          min: 0,
+                          max: 100,
                           ticks: {
                             color: 'rgba(72, 82, 254, 1)',
                             font: {
                               size: 10,
-                              family: 'TTNormsRegular'
+                              family: 'TTNormsBold'
                             }
                           },
 
                         }
 
                       },
+
+                      elements: {
+                        point: {
+                          radius: 0,
+                          hoverRadius: 0
+                        },
+                        line: {
+                          borderWidth: 2.5,
+                          borderCapStyle: 'round',
+                        }
+                      }
 
 
 
@@ -557,8 +592,6 @@
                     }
                   };
                 </script>
-
-
 
                 <script>
                   const myChart = new Chart(
