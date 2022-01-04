@@ -815,13 +815,12 @@ body {
 #altodxalto {
   display: flex;
   width: 300px;
-  height: 80px;
-  margin: 20px;
+  margin: 20px 20px 10px 20px;
 }
 
 #profilephoto {
-  width: 60px;
-  height: 50px;
+  width: 80px;
+  height: 65px;
   border-radius: 50%;
   border-color: #FF5880;
   border-style: solid;
@@ -842,7 +841,7 @@ body {
   text-align: left;
   font-family: TTNormsBold;
   margin: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   color: #FF5880;
 }
 
@@ -851,8 +850,8 @@ body {
   text-align: left;
   font-family: TTNormsRegular;
   color: #FF5880;
-  margin: -5px;
-  margin-bottom: 1px;
+  margin: -10px;
+  margin-bottom: 0px;
   margin-left: 10px;
 }
 
@@ -860,8 +859,9 @@ body {
   font-size: 10px;
   text-align: left;
   font-family: TTNormsRegular;
-  margin-left: 10px;
+  margin-left: 20px;
   color: #FF5880;
+  margin-top: 0px;
 }
 
 #iconposto {
@@ -875,21 +875,10 @@ body {
 
 #altodxbasso {
   display: flex;
-  height: 4.5vw;
   margin-left: 2vw;
   margin-right: 2vw;
 }
 
-.dxcpw {
-  width: 50vw;
-  color: #FF5880;
-  font-family: TTNormsBold;
-}
-
-.dxcpw img {
-  width: 80%;
-  border-radius: 1.2vw;
-}
 
 #centrale {
   padding-left: 1vw;
@@ -907,7 +896,8 @@ body {
 
 #wallet {
   margin-right: 0;
-  padding: 10%;
+  padding: 20px;
+  padding-top: 10px;
   padding-bottom: 2%;
   height: 310px;
 }
@@ -920,7 +910,7 @@ body {
 
 #soldicoomy {
   font-size: 25px;
-  padding-top: 0.7vw;
+  padding-top: 7px;
 }
 
 #tuttisoldi {
