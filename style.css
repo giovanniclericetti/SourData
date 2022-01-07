@@ -819,17 +819,19 @@ body {
 }
 
 #profilephoto {
-  width: 80px;
-  height: 65px;
+
+
+}
+
+#profilephoto img {
   border-radius: 50%;
   border-color: #FF5880;
   border-style: solid;
   overflow: hidden;
   border-width: 2px;
-}
-
-#profilephoto img {
-  height: 102%;
+  width: 50px;
+  height: 50px;
+  
 }
 
 #dati {
@@ -837,48 +839,56 @@ body {
 }
 
 #name {
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   font-family: TTNormsBold;
-  margin: 10px;
-  margin-top: 15px;
+  margin: 8px;
+  margin-top: 12px;
   color: #FF5880;
 }
 
 #sudilui {
-  font-size: 10px;
+  font-size: 11px;
   text-align: left;
   font-family: TTNormsRegular;
   color: #FF5880;
   margin: -10px;
   margin-bottom: 0px;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
-#place {
-  font-size: 10px;
-  text-align: left;
-  font-family: TTNormsRegular;
-  margin-left: 20px;
-  color: #FF5880;
-  margin-top: 0px;
+
+
+.altodxbasso {
+  width: 190px;
+  height: 100px;
+  margin: 10px;
+  margin-top: 15px;
+
 }
 
-#iconposto {
-  margin-top: 0.08vw;
-  margin-left: 1vw;
+.iconetesto{
+text-align: left;
+display: flex;
+align-items: center;
+font-family: TTNormsRegular;
+margin-left: 15px;
+
 }
 
-#iconposto img {
-  height: 1.1vw;
+.iconetesto:hover {
+  font-family: 'TTNormsBold';
+  cursor: pointer;
+  text-decoration: underline;
+    transition: 0.1s ease-in-out;
+
 }
 
-#altodxbasso {
-  display: flex;
-  margin-left: 2vw;
-  margin-right: 2vw;
-}
+.iconetesto img{
+  width: 25px;
+  padding: 0px 5px 5px 10px;
 
+}
 
 #centrale {
   padding-left: 1vw;
@@ -899,7 +909,7 @@ body {
   padding: 20px;
   padding-top: 10px;
   padding-bottom: 2%;
-  height: 310px;
+  height: 320px;
 }
 
 #totale {
