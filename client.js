@@ -47,4 +47,5 @@ function updateValues () {
     //myChart.options.scales.x.labels = accellerometerArray.map(function(value, index){return index * 10});
     myChart.options.scales.y.max = Math.max(...accellerometerArray) + 10;
     myChart.update();
+    
 }

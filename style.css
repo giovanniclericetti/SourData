@@ -649,6 +649,10 @@ body {
   border: 2px solid rgba(255,88,128, 1);
 }
 
+#dotesame{
+  visibility: hidden;
+}
+
 .dot:hover {
   background-color: rgba(72, 82, 254, 1);
   cursor: pointer;
@@ -831,7 +835,7 @@ body {
   border-width: 2px;
   width: 50px;
   height: 50px;
-  
+
 }
 
 #dati {
