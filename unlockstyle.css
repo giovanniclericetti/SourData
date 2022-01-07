@@ -56,7 +56,6 @@ body {
 .answer:hover {
 
   transition: 0.3s ease-in-out;
-  font-family: TTNormsBlack;
 }
 
 .white {
@@ -89,9 +88,7 @@ body {
   cursor: pointer;
 }
 
-#yessticker:hover+#yesanswer {
-  font-family: TTNormsBlack;
-}
+
 
 #nosticker {
   top: -35px;
@@ -116,7 +113,6 @@ cursor: not-allowed;
 }
 
 #nosticker:hover+#noanswer {
-  font-family: TTNormsBlack;
   cursor: not-allowed;
 
 }

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 <head>
   <title> SourData</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="infostyle.css">
   <link rel="icon" type="image/svg" href="logo/icon.svg">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -366,13 +371,18 @@
               <div id="altodxalto">
                 <div id="profilephoto"> <img src="logo/man.png"> </div>
                 <div id="dati">
-                  <div id="name"> Mark Range </div>
-                  <div id="sudilui"> @markrange99 </div>
+                  <div id="name"> Mark Newrange </div>
+                  <div id="sudilui"> @marknewrange </div>
                 </div>
-
               </div>
 
-              <div id="place"> markrange@gmail.com </div>
+              <div class="altodxbasso">
+
+                <div class="iconetesto"> <img src="logo/mark_lock.png">  <div> Security and Privacy </div> </div>
+                <div class="iconetesto"> <img src="logo/mark_settings.png"> <div> Profile and Settings </div> </div>
+                <div class="iconetesto"> <img src="logo/mark_card.png"> <div> Payments and Rewards </div> </div>
+
+              </div>
 
             </div>
 
@@ -529,7 +539,7 @@
                               family: 'TTNormsRegular'
                             }},
 
-                          labels: ['0.0', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', ],
+                          labels: ['0.0', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '0.0', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4',],
 
                         },
 
@@ -577,12 +587,16 @@
                   };
                 </script>
 
+
+
                 <script>
                   const myChart = new Chart(
                     document.getElementById('myChart'),
                     config
                   );
                 </script>
+
+                <script src="./client.js"></script>
 
 
 
