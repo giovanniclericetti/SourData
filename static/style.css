@@ -593,8 +593,8 @@ body {
 }
 
 .dot2 {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin-top: 0%;
 }
 
@@ -1023,18 +1023,20 @@ table td {
 #numerino {
   height: 100%;
   color: #333333;
-  margin-top: 2%;
+  margin-top: 3%;
+    text-align: center;
 }
 
 .spazio {
   width: 50vw;
 }
 
-.frecciapunteggio img {
-  height: 15px;
-  margin-left: 0.1vw;
+#freccina{
+  font-family: souricon;
+  font-size: 32px;
+  color: #FF5880;
+  padding-left: 3px;
 }
-
 
 
 .chartBox{

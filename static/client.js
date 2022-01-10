@@ -52,34 +52,83 @@ function updateValues () {
 
 const records = {
   'dot1': {
-    accellerometerArray : [5,20,5,30,6],
+    accellerometerArray : [20, 40, 45, 60, 45, 50, 55, 50, 55, 60, 70, 60, 80, 80, 75, 85, 90, 85, 90,  85, 85, 80, 85, 90, 75, 70, 60, 50, 70, 60, 55, 45, 40, 30, 20, 30, 10, 0],
 
     duration: 5,
-    fraseminuti: 'Giorgia Fulghieri Totalissima Leggenda',
+    fraseminuti: 'brief but fierce',
 
     punteggio: 160,
+    freccina: 'a',
     numerinoscritto: +10,
     frasepunteggio: 'Io ci provo a sbagliare ma sono fortissimo',
 
   },
 
   'dot2': {
-    accellerometerArray : [5,20,25,30,66, 50, 30, 45],
+    accellerometerArray : [20, 40, 45, 60, 45, 50, 55, 50, 55, 60, 70, 60, 80, 80, 75, 85, 90, 85, 90,  85, 85, 80, 85, 90, 75, 70, 60, 50, 70, 60, 55, 45, 40, 30, 20, 30, 10, 0],
 
-    duration: 15,
+    duration: 5,
     fraseminuti: 'Giorgia Fulghieri Totalissima Leggenda',
 
-    punteggio: 100,
-    numerinoscritto: -60,
-    frasepunteggio: 'Maurizio Eddina Maurizione Eddina ',
+    punteggio: 160,
+    freccina: 'a',
+    numerinoscritto: +10,
+    frasepunteggio: 'Io ci provo a sbagliare ma sono fortissimo',
+
   },
 
-  'dot3': {
-    accellerometerArray : [5,20,5,30,6],
-    battiti: 106,
-    fraseBattiti: 'ciao',
-    duration: 5
+  'dot4': {
+    accellerometerArray : [20, 40, 45, 60, 45, 50, 55, 50, 55, 60, 70, 60, 80, 80, 75, 85, 90, 85, 90,  85, 85, 80, 85, 90, 75, 70, 60, 50, 70, 60, 55, 45, 40, 30, 20, 30, 10, 0],
+
+    duration: 5,
+    fraseminuti: 'Giorgia Fulghieri Totalissima Leggenda',
+
+    punteggio: 160,
+    freccina: 'a',
+    numerinoscritto: +10,
+    frasepunteggio: 'Io ci provo a sbagliare ma sono fortissimo',
+
+  },
+
+  'dot5': {
+    accellerometerArray : [20, 40, 45, 60, 45, 50, 55, 50, 55, 60, 70, 60, 80, 80, 75, 85, 90, 85, 90,  85, 85, 80, 85, 90, 75, 70, 60, 50, 70, 60, 55, 45, 40, 30, 20, 30, 10, 0],
+
+    duration: 5,
+    fraseminuti: 'Giorgia Fulghieri Totalissima Leggenda',
+
+    punteggio: 160,
+    freccina: 'a',
+    numerinoscritto: +10,
+    frasepunteggio: 'Io ci provo a sbagliare ma sono fortissimo',
+
+  },
+
+  'dot8': {
+    accellerometerArray : [20, 40, 45, 60, 45, 50, 55, 50, 55, 60, 70, 60, 80, 80, 75, 85, 90, 85, 90,  85, 85, 80, 85, 90, 75, 70, 60, 50, 70, 60, 55, 45, 40, 30, 20, 30, 10, 0],
+
+    duration: 5,
+    fraseminuti: 'Giorgia Fulghieri Totalissima Leggenda',
+
+    punteggio: 160,
+    freccina: 'a',
+    numerinoscritto: +10,
+    frasepunteggio: 'Io ci provo a sbagliare ma sono fortissimo',
+
+  },
+
+  'dot9': {
+    accellerometerArray : [20, 40, 45, 60, 45, 50, 55, 50, 55, 60, 70, 60, 80, 80, 75, 85, 90, 85, 90,  85, 85, 80, 85, 90, 75, 70, 60, 50, 70, 60, 55, 45, 40, 30, 20, 30, 10, 0],
+
+    duration: 5,
+    fraseminuti: 'Giorgia Fulghieri Totalissima Leggenda',
+
+    punteggio: 160,
+    freccina: 'a',
+    numerinoscritto: +10,
+    frasepunteggio: 'Io ci provo a sbagliare ma sono fortissimo',
+
   }
+
 }
 
 
