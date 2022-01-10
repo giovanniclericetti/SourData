@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<head>
+  <title> SourData</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="hubstyle.css">
+  <link rel="icon" type="image/svg" href="logo/icon.svg">
+</head>
+
+<body>
+
+
+    <div id="navbar">
+      <div id="logo"> <img src="logo/logo.svg" alt="Logo"> </div>
+
+
+        <div class="li"><a href="hub.html">HUB</a></div>
+        <div class="li"><a href="coomy.html">COOMY</a></div>
+        <div class="li"><a href="wheezy.html">WHEEZY</a></div>
+        <div class="li"><a href="poopy.html">POOPY</a></div>
+        <div class="li dx" id="about"><a href="account.html">ABOUT MARK</a></div>
+        <div class="li dx"><a href="info.html">(?)</a></div>
+        <div class="li dx" id="carrellosksk"> <a> (C) </a>
+
+        <div  id="shoppingbag" class="hide" > <div id="containertriangolo">  <div id="vuoto"> </div>
+        <div id="triangoloalto"> </div> <div id="vuoto"> </div> </div>
+        <div id="triangolino">
+        <div id="empty"> Your Bag is empty. </div>
+        <div id="bag"> <img src="logo/bag.svg"> <div class="scrittacarello"> Bag </div> </div>
+        <div id="saveditems"> <img src="logo/saveditems.svg"> <div class="scrittacarello"> Saved Items </div> </div>
+        <div id="orders"> <img src="logo/orders.svg"> <div class="scrittacarello"> Orders </div> </div> </div>
+
+  </div>  </div>  </div>
+    </div>
+
+
+    </div>
+
+
+<div id="staidavanti">
+
+  <div id="bloccozero">
+  <div id="spaziovuoto"> </div> <div class="titoloprodotto" > COOMY </div> <div id="spaziovuoto"> </div>
+</div>
+
+  <div id="primoblocco">
+  <div class="titolinosuvideo" > Know what's happening. </div>
+<div class="testinosuvideo"> The device is connected to a platform that lets you know what's going on, 24/7.
+You can check the website from anywhere, it gives you instant visual feedback. </div>
+</div>
+
+<div id="secondoblocco">
+<div class="titolinosuvideo" > Designed for any hand. </div>
+<div class="testinosuvideo"> Sourcoomy is specially designed to fit every hand. It even has an adjustable closure to be as adaptable as possible. </div>
+</div>
+
+<div id="terzoblocco">
+  <div class="titolinosuvideo" > Your data is safer. </div>
+  <div class="testinosuvideo"> With Sourcooomy, your privacy comes first.
+Feel safe knowing that your information is protected using advanced security. </div>
+</div>
+
+<div id="quartoblocco">
+<div id="spaziovuoto"> </div> <div id="frasettacentrata"> The new sourcoomy has arrived, <br> a reliable device that detects your masturbation data.
+Coomy is soft and flexible, you just need to wear it and <br> you can use it at any time. </div>
+<div id="spaziovuoto"> </div>
+</div>
+</div>
+
+
+<div id="set-height"> </div>
+
+<p id="time"></p>
+
+<div class="divvideo">
+  <div class="videozero">
+<video id="v0"  tabindex="0" autobuffer="autobuffer" preload="preload">
+<source type="video/mp4" src="video/videoprova.mp4"></source> </video>
+</div> </div>
+
+
+<script id="rendered-js">
+
+var frameNumber = 0, // start video at frame 0
+    // lower numbers = faster playback
+    playbackConst = 800,
+    // get page height from video duration
+    setHeight = document.getElementById("set-height"),
+    // select video element
+    vid = document.getElementById('v0');
+    // var vid = $('#v0')[0]; // jquery option
+
+// dynamically set the page height according to video length
+vid.addEventListener('loadedmetadata', function() {
+  setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+});
+
+// Use requestAnimationFrame for smooth playback
+function scrollPlay(){
+  var frameNumber  = window.pageYOffset/playbackConst;
+  vid.currentTime  = frameNumber;
+  window.requestAnimationFrame(scrollPlay);
+}
+
+window.requestAnimationFrame(scrollPlay);
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

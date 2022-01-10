@@ -31,7 +31,7 @@ const server = http.createServer((request, response) => {
     console.log('request ', request.url);
 
     // ricava dove sta il file dall'url
-    let filePath = '.' + request.url;
+    let filePath = './static/' + request.url;
     if (filePath == './') {
         filePath = './index.html';
     }
@@ -61,6 +61,7 @@ const server = http.createServer((request, response) => {
         }
     });
 });
+
 
 console.log('ascolto la porta ', port);
 

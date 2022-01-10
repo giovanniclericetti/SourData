@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <title> SourData</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="infostyle.css">
+  <link rel="icon" type="image/svg" href="logo/icon.svg">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+
+
+  <div id="navbar">
+    <div id="logo"> <a href="home.html"> <img src="logo/logo.svg" alt="Logo"> </a> </div>
+
+
+    <div class="li"><a href="hub.html">HUB</a></div>
+    <div class="li"><a href="coomy.html">COOMY</a></div>
+    <div class="li"><a href="wheezy.html">WHEEZY</a></div>
+    <div class="li"><a href="poopy.html">POOPY</a></div>
+    <div class="li dx" id="about"><a href="account.html">ABOUT MARK</a></div>
+    <div class="li dx" id="informa"><a href="info.html"> i </a></div>
+    <div class="li dx" id="carrellosksk"> <a> c </a>
+
+      <div id="shoppingbag">
+        <div id="containertriangolo">
+          <div id="vuoto"> </div>
+          <div id="triangoloalto"> </div>
+          <div id="vuoto"> </div>
+        </div>
+        <div id="triangolino">
+          <div id="empty"> Your Bag is empty. </div>
+          <div id="bag"> <img src="logo/bag.svg">
+            <div class="scrittacarello"> Bag </div>
+          </div>
+          <div id="saveditems"> <img src="logo/saveditems.svg">
+            <div class="scrittacarello"> Saved Items </div>
+          </div>
+          <div id="orders"> <img src="logo/orders.svg">
+            <div class="scrittacarello"> Orders </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="centrapage">
+
+
+    <div id="accountpage">
+
+      <div id="domanda"> Mark, the results of your efforts </div>
+
+      <div id="container">
+
+        <div id="primacolonna">
+
+          <div id="sceglioggetto">
+            <div class="dashbox" id="tagselected"> <img src="logo/coomy.png"> </div>
+            <div class="spaceselector"> </div>
+            <div class="dashbox" id="tagnotselected"> <img src="logo/poopy.png"> </div>
+            <div class="spaceselector"> </div>
+            <div class="dashbox" id="tagnotselected"> <img src="logo/wheezy.png"> </div>
+          </div>
+
+          <div class="dashbox" id="wallet">
+
+            <div id="totale">
+              <div id="testisoldi">
+                <div id="soldicoomy">9,20€ </div>
+                <div id="tuttisoldi"> Total: 47,80€ </div>
+              </div>
+              <img src="logo/transaction.jpg" alt="Logo">
+
+            </div>
+
+            <div id="inriga">
+              <div id="titletransaction"> RECENT TRANSACTIONS </div>
+            </div>
+
+
+            <div id="nelletransiction">
+
+              <div class="infosuquesto accountballoon" id="sopradeidue"> p
+
+                <div class="balloonsottoinfo"> Expand transaction tab </div>
+              </div>
+
+              <div class="infosuquesto accountballoon"> d
+
+                <div class="balloonsottoinfo"> Every session with a device grants <br> a reward, you can find a summary <br> of every transaction in this tab.  </div>
+              </div>
+            </div>
+
+            <div id="table">
+
+              <table>
+
+                <tr id="taggatocoomy">
+                  <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Coomy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+3,50€</td>
+                </tr>
+
+                <tr id="taggatopoopy">
+                  <td class="col1"> <img src="logo/tagpoopy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Poopy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+2,80€</td>
+                </tr>
+
+                <tr id="taggatowheezy">
+                  <td class="col1"> <img src="logo/tagwheezy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Wheezy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+1,70€</td>
+                </tr>
+
+                <tr id="taggatocoomy">
+                  <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Coomy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+2,30€</td>
+                </tr>
+
+                <tr id="taggatopoopy">
+                  <td class="col1"> <img src="logo/tagpoopy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Poopy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+1,40€</td>
+                </tr>
+
+                <tr id="taggatocoomy">
+                  <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Coomy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+4,20€</td>
+                </tr>
+
+                <tr id="taggatowheezy">
+                  <td class="col1"> <img src="logo/tagwheezy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Wheezy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+2,20€</td>
+                </tr>
+
+                <tr id="taggatocoomy">
+                  <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Coomy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+1,50€</td>
+                </tr>
+
+                <tr id="taggatopoopy">
+                  <td class="col1"> <img src="logo/tagpoopy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Poopy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+0,90€</td>
+                </tr>
+
+                <tr id="taggatocoomy">
+                  <td class="col1"> <img src="logo/tagcoomy.png"> </td>
+                  <td class="col2">
+                    <div class="titolinowallet"> Coomy </div>
+                    <div class="scrittomini"> 10/12/2021 </div>
+                  </td>
+                  <td class="col3">+4,80€</td>
+                </tr>
+
+
+
+
+
+
+              </table>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="partedx">
+
+          <div id="graficocommentino">
+
+            <div class="dashbox" id="settimana">
+
+              <div class="flex">
+
+                <div id="testinografico"> GRAFICO SETTIMANA </div>
+                <div class="inrigameli">
+
+                  <div class="infosuquesto accountballoon" id="sopradeidue"> p
+
+                    <div class="balloonsottoinfo"> Here you can see a weekly table <br> of how many times you interacted with the device. You can see <br> the specifics of each event <br> by clicking on it. </div>
+                  </div>
+
+                  <div class="infosuquesto accountballoon"> d
+
+                    <div class="balloonsottoinfo"> Expand weekly graph </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="sottodiviso">
+
+                <div class="orarigiusti">
+
+                  <div class="ore"> </div>
+                  <div class="ore"> 06.00 </div>
+                  <div class="ore"> 12.00 </div>
+                  <div class="ore"> 18.00 </div>
+                  <div class="ore"> 24.00 </div>
+                  <div class="ore"> </div>
+
+
+
+
+
+
+
+                </div>
+
+                <div id="lineatemporale">
+
+                  <div class="grid-container">
+
+
+                    <div class="vuotoinizio grid-item notopline"></div>
+
+                    <div class="giorno1 grid-item notopline"> </div>
+                    <div class="giorno2 grid-item notopline"> </div>
+                    <div class="giorno3 grid-item notopline"> </div>
+                    <div class="giorno4 grid-item notopline">
+                      <div class="dot dot5">
+                        <div class="infogiorno" id="infogiorno5"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+                    <div class="giorno5 grid-item notopline"> </div>
+                    <div class="giorno6 grid-item notopline"> </div>
+                    <div class="giorno7 grid-item notopline">
+                      <div class="dot dot9">
+                        <div class="infogiorno" id="infogiorno9"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+
+                    <div class="vuotoinizio grid-item "></div>
+                    <div class="giorno1 grid-item"></div>
+                    <div class="giorno2 grid-item">
+                      <div class="dot dot2" id="dot2" onclick="readRecord('dot2')">
+                        <div class="infogiorno" id="infogiorno2"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+                    <div class="giorno3 grid-item"> </div>
+                    <div class="giorno4 grid-item"></div>
+                    <div class="giorno5 grid-item">
+                      <div class="dot dot6">
+                        <div class="infogiorno" id="infogiorno6"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+                    <div class="giorno6 grid-item"></div>
+                    <div class="giorno7 grid-item">
+                      <div class="dot dotesame" id="dotesame">
+                        <div class="infogiorno" id="infogiornoesame"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+
+
+                    <div class="vuotoinizio grid-item "></div>
+                    <div class="giorno1 grid-item">
+                      <div class="dot dot1" id="dot1" onclick="readRecord('dot1')">
+                        <div class="infogiorno" id="infogiorno1"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+                    <div class="giorno2 grid-item"></div>
+                    <div class="giorno3 grid-item">
+                      <div class="dot dot4">
+                        <div class="infogiorno" id="infogiorno4"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+                    <div class="giorno4 grid-item"></div>
+                    <div class="giorno5 grid-item"> </div>
+                    <div class="giorno6 grid-item">
+                      <div class="dot dot8">
+                        <div class="infogiorno" id="infogiorno8"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+                    <div class="giorno7 grid-item"></div>
+
+                    <div class="vuotoinizio grid-item "></div>
+                    <div class="giorno1 grid-item"> </div>
+                    <div class="giorno2 grid-item">
+
+                    </div>
+                    <div class="giorno3 grid-item"></div>
+                    <div class="giorno4 grid-item"></div>
+                    <div class="giorno5 grid-item">
+                      <div class="dot dot7">
+                        <div class="infogiorno" id="infogiorno7"> 09.04 - 09.17 </div>
+                      </div>
+                    </div>
+                    <div class="giorno6 grid-item"> </div>
+                    <div class="giorno7 grid-item"></div>
+
+                    <div class="vuotoinizio grid-item "></div>
+                    <div class="giorno1 grid-item sotto">02.02</div>
+                    <div class="giorno2 grid-item sotto">03.02</div>
+                    <div class="giorno3 grid-item sotto">04.02</div>
+                    <div class="giorno4 grid-item sotto">05.02</div>
+                    <div class="giorno5 grid-item sotto">06.02</div>
+                    <div class="giorno6 grid-item sotto">07.02</div>
+                    <div class="giorno7 grid-item sotto">08.02</div>
+
+
+                  </div>
+
+
+
+                </div>
+
+
+
+
+              </div>
+              <div class="divisionesettimana">
+
+
+
+
+
+              </div>
+            </div>
+
+
+            <div class="dashbox" id="commento">
+
+              <div id="altodxalto">
+                <div id="profilephoto"> <img src="logo/man.png"> </div>
+                <div id="dati">
+                  <div id="name"> Mark Newrange </div>
+                  <div id="sudilui"> @marknewrange </div>
+                </div>
+              </div>
+
+              <div class="altodxbasso">
+
+                <div class="iconetesto"> <img src="logo/mark_lock.jpg">  <div> Security and Privacy </div> </div>
+                <div class="iconetesto"> <img src="logo/mark_settings.jpg"> <div> Profile and Settings </div> </div>
+                <div class="iconetesto"> <img src="logo/mark_card.jpg"> <div> Payments and Rewards </div> </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="partesotto">
+
+            <div class="dashbox" id="duration"> DURATION
+
+              <div class="illustration"> <img src="logo/duration.jpg"> </div>
+
+              <div class="commentoni"> <span id="minuti-performance">6</span>min </div>
+              <div class="commentini"> <span id="fraseminuti"> Francesco Nozza <br> trova una frase </span> </div>
+
+              <div class="inrigameli">
+
+                <div class="infosuquesto accountballoon" id="sopradeidue"> p
+
+                  <div class="balloonsottoinfo"> Expand duration tab </div>
+                </div>
+
+                <div class="infosuquesto accountballoon"> d
+
+                  <div class="balloonsottoinfo"> Here you can see <br> how long you lasted. </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="dashbox" id="hornymeter"> HORNYMETER
+
+              <div class="illustration"> <img src="logo/hornymeter.jpg"> </div>
+
+              <div id="punteggio">
+                <div class="spazio"> </div>
+                <div class="commentoni"> <span id="punteggiocambia">106</span></div>
+
+                <div id="numerino">
+                  <div> <span id="numerinoscritto">106</span> </div>
+                  <div class="frecciapunteggio"> <img src="logo/frecciapunteggio.svg"> </div>
+
+                </div>
+                <div class="spazio"> </div>
+              </div>
+              <div class="commentini"> <span id="frasepunteggio"> Fareshi Eskere <br> trova una frase </span> </div>
+
+              <div class="inrigameli">
+
+                <div class="infosuquesto accountballoon" id="sopradeidue"> p
+
+                  <div class="balloonsottoinfo"> Expand hornymeter tab </div>
+                </div>
+
+                <div class="infosuquesto accountballoon"> d
+
+                  <div class="balloonsottoinfo"> We calculate the horny <br> meter with  the GSR sensor <br> and the BPM sensor. </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="dashbox" id="pacing">
+
+
+
+                <div class=" flex">
+
+              <div class="scrittapacing">
+              PACING </div>
+
+
+
+              <div class="inrigameli larghezzapacing ">
+
+                <div class="infosuquesto accountballoon" id="sopradeidue" style="margin-top: 0px;"> p
+
+                  <div class="balloonsottoinfo " > Expand pacing tab </div>
+                </div>
+
+                <div class="infosuquesto accountballoon" style="margin-top: 0px;"> d
+
+                  <div class="balloonsottoinfo"> Here you can see how many <br> times you FAPPED every <br> given amount of time.  </div>
+                </div>
+
+            </div>
+          </div>
+
+              <div class="chartBox">
+
+
+
+                <canvas id="myChart" style="height: 135px; width: 600px;"></canvas>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                  const labels = [  ];
+
+                  const data = {
+                    labels: labels,
+                    datasets: [{
+                      label: 'My First Dataset',
+                      data: [20, 65, 20, 80, 15, 56, 07, 40, 15, 56, 07, 40, 50, 80, 20, 65, 23, 80, 5, 56, 17, 40, 80, 15, 56, 07, 40, 15, 56, 07,],
+                      fill: false,
+                      borderColor: 'rgba(72,82,254, 1)',
+                      tension: 0.4
+                    }],
+
+
+
+                  };
+
+                  const config = {
+                    type: 'line',
+                    data: data,
+                    options: {
+
+
+                      plugins: {
+                        legend: {
+                          display: false
+                        },
+                        tooltip: {
+
+                          enabled: false
+                        }
+
+                      }
+
+                      ,
+                      layout: {
+                        padding: {
+                          left: 10,
+                          top: 10,
+                          bottom: 10
+                        }
+                      },
+
+                      scales: {
+
+
+                        x: {
+                          type: 'category',
+
+                          grid: {
+                            borderColor: 'rgba(72, 82, 254, 1)',
+                            color: 'rgba(72,82,254, 0.2)',
+                            borderDash: [1, 1],
+
+                          },
+
+                          ticks: {
+                            color: 'rgba(72, 82, 254, 1)',
+                            font: {
+                              size: 10,
+                              family: 'TTNormsRegular'
+                            }},
+
+                          labels: ['0.0', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '0.0', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.2', '1.3', '1.4', '1.5', '1.3', '1.4', '1.5', '1.3', '1.4',],
+
+                        },
+
+                        y: {
+
+                          beginAtZero: true,
+
+                          grid: {
+                            borderColor: 'rgba(72, 82, 254, 1)',
+                            color: 'rgba(72, 82, 254, 1)',
+
+
+                          },
+                          min: 0,
+                          max: 100,
+                          ticks: {
+                            color: 'rgba(72, 82, 254, 1)',
+                            font: {
+                              size: 10,
+                              family: 'TTNormsBold'
+                            }
+                          },
+
+                        }
+
+                      },
+
+                      elements: {
+                        point: {
+                          radius: 0,
+                          hoverRadius: 0
+                        },
+                        line: {
+                          borderWidth: 2.5,
+                          borderCapStyle: 'round',
+                        }
+                      }
+
+
+
+
+
+
+                    }
+                  };
+                </script>
+
+
+
+                <script>
+                  const myChart = new Chart(
+                    document.getElementById('myChart'),
+                    config
+                  );
+                </script>
+
+
+
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <div id="footer">
+    <img src="logo/powered.svg" alt="Powered">
+
+    <div class="scrittefooter">
+      Copyright © 2021 SourData. All rights reserved.
+      <br> Privacy Policy | Terms of Use | Sales and Refunds | Legal
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+
+  </div>
+
+  <script src="./client.js"></script>
+
+
+</body>
+
+</html>

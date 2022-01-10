@@ -1,0 +1,180 @@
+@font-face {
+  font-family: TTNormsBold;
+  src: url("fonts/ttnormspro/TTNorms-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TTNormsBlack;
+  src: url("fonts/ttnormspro/TTNorms-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TTNormsRegular;
+  src: url("fonts/ttnormspro/TTNorms-Regular.otf") format("opentype");
+}
+
+
+#frasi {
+  font-family: TTNormsBold;
+  font-size: 3vw;
+  padding: 2vw;
+
+  padding-top: 8vw;
+  color: #333333;
+  text-align: center;
+}
+
+.portaboxini{
+width: 50vw;
+height: 52vw;
+margin-left: 25vw;
+margin-right: 25vw;
+}
+
+.boxinosopra{
+  width: 50vw;
+  background-color: #C4C4C4;
+  height: 25vw;
+  border-radius: 3vw;
+  margin-bottom: 2vw;
+
+}
+
+.centrapiu {
+
+  display: flex;
+  width: auto;
+  text-align: center;
+  top:23vw;
+  position: relative;
+}
+
+
+.infosuquesto {
+  float: right;
+  margin-right: 4px;
+  font-family: souricon;
+  font-size: 30px;
+  color: #C4C4C4;
+  position: relative;
+  padding-bottom: 0;
+
+}
+
+.inrigameli{
+  display: flex;
+    padding-right: 40px;
+}
+
+#nelletransiction{
+  display: flex;
+  padding-right: 20px;
+  position: absolute;
+  margin-left: 110px;
+  margin-top: -19px;
+}
+
+.infosuquesto .balloonsottoinfo {
+  visibility: hidden;
+  width: 160px;
+  background-color: #FF5880;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  font-family: TTNormsRegular;
+  font-size: 10px;
+
+  z-index: 1;
+  top: 150%;
+  margin: 0px;
+  margin-left: -650%;
+}
+
+.infosuquesto .balloonsottoinfo::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 39.5%;
+  margin-left: 15px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #FF5880 transparent;
+}
+
+#inrigaballon{
+  margin: 0;
+  margin-right: 0.5vw;
+  padding: 0;
+}
+
+.piuedomanda{
+  display: flex;
+}
+
+.infosuquesto:hover .balloonsottoinfo {
+  visibility: visible;
+  transition: 0.3s ease-in-out;
+}
+
+.infosuquesto:hover {
+  transition: 0.3s ease-in-out;
+  color: #FF5880;
+  cursor: pointer;
+}
+
+.accountballoon{
+  margin-top: 8%;
+}
+
+#sopradeidue{
+
+  margin-left: 90%;
+}
+
+
+
+.spazioballon{
+background-color: red;
+}
+
+
+.boxinisotto{
+  width: 50vw;
+  height: 25vw;
+  border-radius: 3vw;
+  margin-bottom: 2vw;
+  display: flex;
+}
+
+.boxinosottosx{
+  width: 24vw;
+  background-color: #C4C4C4;;
+  height: 25vw;
+  border-radius: 3vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+
+.boxinosottodx{
+  width: 24vw;
+  background-color: #C4C4C4;;
+  height: 25vw;
+  border-radius: 3vw;
+  margin-bottom: 2vw;
+}
+
+#footerinfo {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+
+#footerinfo img {
+  width: 10vw;
+}

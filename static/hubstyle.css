@@ -1,0 +1,126 @@
+.titoloprodotto{
+font-family: sourtype;
+font-size: 20vw;
+  padding-bottom: 1vw;
+color: #FF5880;
+text-align: center;
+/*background-color: red;*/
+opacity: 1;
+display: flex;
+line-height: 40vw;
+
+
+}
+
+#bloccozero{
+  margin-top: 0vw;
+  position: absolute;
+  width: 101vw;
+  background-color: white;
+  display: flex;
+  padding-top:10vw;
+  height: 50vw;
+
+}
+
+
+.titolinosuvideo {
+  font-family: TTNormsBold;
+  font-size: 2vw;
+    padding-bottom: 1vw;
+  color: black;
+  text-align: left;
+  /*background-color: red;*/
+  opacity: 1;
+  width: 25vw;
+  margin-left: 2vw;
+}
+
+.testinosuvideo {
+  font-family: TTNormsRegular;
+  font-size: 1vw;
+  color: black;
+  text-align: left;
+  /*background-color: blue;*/
+  opacity: 1;
+  width: 25vw;
+  margin-left: 2vw;
+}
+
+#primoblocco{
+margin-top: 120vw;
+position: absolute;
+  margin-left: 2vw;
+
+}
+
+#secondoblocco{
+/*background-color: green;*/
+padding-left: 70vw;
+margin-top: 180vw;
+margin-right: 0;
+position: absolute;
+}
+
+
+#terzoblocco{
+  margin-top: 240vw;
+  position: absolute;
+  margin-left: 2vw;
+
+}
+
+#quartoblocco{
+  margin-top: 290vw;
+  position: absolute;
+  width: 101vw;
+  background-color: white;
+  display: flex;
+  padding-top:10vw;
+    padding-bottom:5000vw;
+
+}
+
+#frasettacentrata{
+  text-align: center;
+  width: 110vw;
+  padding: 0px;
+  margin-left: 5vw;
+margin-right: 5vw;
+  font-family: TTNormsBold;
+  font-size: 2vw;
+  color: #333333;
+  width: 70vw;
+}
+
+#spaziovuoto{
+  width: 50vw;
+  background-color: white;
+}
+
+#staidavanti {
+  z-index: 9;
+  position: absolute;
+  margin-left: -1vw;
+  margin-right: -1vw;
+
+}
+
+#set-height {
+  height: 10000px;
+}
+
+.divvideo{
+  position: relative;
+  background-color: red;
+  top: 100px;
+  margin: 10px;
+}
+
+#v0 {
+  position: fixed;
+  top: 10vw;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
