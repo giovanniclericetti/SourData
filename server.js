@@ -4,7 +4,7 @@ const fs = require('fs'); // il modulo "file system" (fs) permette a node di usa
 const path = require('path'); // il modulo path aiuta a leggere dove stanno i file a partire dagli url
 
 // Su che porta verrà creato il server?
-const port = 8000;
+const port = 3000;
 // lista delle estensioni file che il server saprà riconoscere (per il tutotrial ne serviranno di fatto solo alcuni)
 const mimeTypes = {
     '.html': 'text/html',
@@ -31,9 +31,11 @@ const server = http.createServer((request, response) => {
     console.log('request ', request.url);
 
     // ricava dove sta il file dall'url
-    let filePath = './static/' + request.url;
-    if (filePath == './') {
-        filePath = './index.html';
+    let filePath = './static' + request.url;
+
+    console.log(filePath);
+    if (filePath == './static/') {
+        filePath = './static/index.html';
     }
 
     // estrai l'estensione del file e capisci che tipo di file è

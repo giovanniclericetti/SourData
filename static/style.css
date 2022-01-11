@@ -635,10 +635,10 @@ body {
 }
 
 .dot9 {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   margin: 30%;
-  margin-top: 0%;
+  margin-top: 10%;
 }
 
 .dotesame {
@@ -650,7 +650,7 @@ body {
 }
 
 #dotesame{
-  visibility: hidden;
+  visibility: visible;
 }
 
 .dot:hover {
