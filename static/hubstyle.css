@@ -107,12 +107,11 @@ margin-right: 5vw;
 }
 
 #set-height {
-  height: 10000px;
+  height: 10px;
 }
 
 .divvideo{
   position: relative;
-  background-color: red;
   top: 100px;
   margin: 10px;
 }

@@ -218,6 +218,7 @@ body {
   margin-top: -10px;
   z-index: 20;
   justify-content: center;
+  top: 10px;
 }
 
 .li {
@@ -247,7 +248,7 @@ body {
   float: right;
 }
 
-#logo img {
+#logonav img {
   padding-top: 10px;
   padding-left: 60px;
   padding-right: 45px;
@@ -257,7 +258,7 @@ body {
   width: 35px;
 }
 
-#logo img:hover {
+#logonav img:hover {
   opacity: 1;
   transition: 0.3s ease-in-out;
   cursor: pointer;

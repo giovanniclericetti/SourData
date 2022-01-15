@@ -1,0 +1,416 @@
+
+/* SCRITTEINIZIALI */
+
+body{
+  text-align: center;
+  font-family: TTNormsBold;
+}
+
+.scritteiniziali{
+  margin-top: 20vh;
+
+}
+
+.logoprodotto{
+
+font-family: sourtype;
+height: auto;
+font-size: 4vh;
+color: #FF5880;
+}
+
+.fraseiniziale{
+font-size: 50px;
+color: #4852FE;
+}
+
+.compra{
+background-color: #FF5880;
+width: 130px;
+padding: 8px;
+font-size: 12px;
+color: white;
+cursor: pointer;
+border-radius: 20px;
+margin-top: 20px;}
+
+.compra:hover{
+background-color: #FF92AC;
+  transition: 0.3s ease-in-out;
+}
+
+.flexcenter{
+display: flex;
+justify-content: center;
+}
+
+/* PRIMO VIDEO */
+
+.videouno{
+  background-color: #C4C4C4;
+  width: 100vw;
+  height: 500px;
+  margin-top: 40px;
+  text-align: center;
+    font-family: TTNormsBold;
+}
+
+/* SCRITTA INTRO */
+
+.scrittaintro{
+  padding: 50px;
+  font-size: 25px;
+  color: #4852FE;
+  margin: 100px 0 100px 0;
+}
+
+/* VIDEO DUE */
+.videouno{
+  background-color: #C4C4C4;
+  width: 100vw;
+  height: 500px;
+  margin-top: 40px;
+  text-align: center;
+    font-family: TTNormsBold;
+}
+
+#logo img {
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 45px;
+  overflow: hidden;
+  float: left;
+  opacity: 0.8;
+  width: 35px;
+}
+
+#logo img:hover {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.bcg {
+	background-position: center center;
+	background-size: cover;
+  background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+/* Slide 5 */
+#scrittascura {
+height: 200vh;}
+
+#scrittascura .bcg {
+  background-image:url('logo/chiara.png');
+}
+
+#scrittascura .bcg2 {
+  background-image:url('logo/scura.png');
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+}
+
+.hsContent {
+	width: 400px;
+  padding: 300px;
+	color: white;
+	text-align: center;
+}
+
+.tipregovai{
+  height: 600px;
+}
+
+
+.instruction{
+  width: 100vw;
+  background-color: #4852FE;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  color: white;
+  font-size: 25px;
+}
+
+
+.boxinstruction{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+
+
+.pass{
+  background-color: #4852FE;
+  width: 13%;
+  margin: 10px;
+  font-size: 12px;
+  color: white;
+  font-family: TTNormsRegular;
+  text-align: left;
+
+}
+
+.pass img{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.boxinstr{
+  height: 200px;
+  padding-top: 50%;
+}
+
+
+.containerinstruction{
+  display: flex;
+  width: 100%;
+  background-color: orange;
+  height: 50vh;
+  position: block;
+
+
+}
+
+
+.titolinoinstri{
+  font-size: 30px;
+  margin-bottom: 15px;
+    font-family: sourtype;
+}
+
+.titolinospiega{
+  font-family: sourtype;
+  font-size: 15px;
+}
+
+
+
+
+
+.primobox{
+  width: 35vw;
+  background-color: red;
+  height: 50vh;
+  position: sticky;
+  top: 0;
+}
+
+.secondobox{
+  width: 35vw;
+  background-color: green;
+  height: 150vh;
+  top: 0;
+  position: fixed;
+}
+
+.terzobox{
+  width: 35vw;
+  background-color: pink;
+  height: 50vh;
+  margin-top: 300px;
+}
+
+#set-height {
+  height: 100px;
+  background-color: red;
+}
+
+#v0 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+}
+
+
+
+.scrittapresensor{
+  padding: 50px;
+  font-size: 25px;
+  color: #4852FE;
+  margin: 100px 0 -200px 0;
+
+}
+
+
+#set-height1 {
+    max-height: 6000px;
+    text-align: left;
+    position: sticky;
+}
+
+#v1 {
+  top: 0;
+  left: 0;
+  width: 70%;
+  margin-left: 30%;
+  height: 100vh;
+  position: sticky;
+}
+
+.sensor{
+  height: 300px;
+
+  width: 35%;
+  padding: 20px;
+  padding-left: 10vw;
+}
+
+#sensor1{
+  margin-top: 80vh;
+
+}
+
+#sensor2{
+  margin-top: 120vh;
+}
+
+#sensor3{
+  margin-top: 140vh;
+}
+
+.sopratitolino{
+  font-size: 15px;
+  font-family: sourtype;
+  color: #FF5880;
+
+}
+
+.titolino{
+font-size: 25px;
+color: #4852FE;
+margin: 2px 0 10px 0;
+}
+
+.spiegaz{
+  font-size: 12px;
+  font-family: TTNormsRegular;
+  padding-right: 20px;
+  width: 250px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 90vw;
+  position: relative;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+border-radius: 50px;
+}
+
+.mySlides img{
+  border-radius: 20px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px ;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #FF5880;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding-bottom: 8px;;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dotimage {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 2px;
+  background-color: #FF92AC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dotimage:hover {
+  background-color: #FF5880;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#footerproduct{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  color: white;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+#footerproduct img {
+  width: 100px;
+}
