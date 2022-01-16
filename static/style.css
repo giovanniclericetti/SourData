@@ -248,7 +248,7 @@ body {
   float: right;
 }
 
-#logonav img {
+#logo img {
   padding-top: 10px;
   padding-left: 60px;
   padding-right: 45px;
@@ -258,7 +258,7 @@ body {
   width: 35px;
 }
 
-#logonav img:hover {
+#logo img:hover {
   opacity: 1;
   transition: 0.3s ease-in-out;
   cursor: pointer;
