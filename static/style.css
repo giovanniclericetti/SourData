@@ -34,19 +34,18 @@ body {
 }
 
 .sfondohome {
-  width: 102vw;
+  width: 100vw;
   position: relative;
-  justify-content: center;
 }
 
 .sfondohome img {
-  max-width: 100%;
+  max-width: 103%;
 }
 
 .testihome {
   padding-left: 10vw;
   position: absolute;
-  top: 20vw;
+  top: 22vw;
   font-family: TTNormsBlack;
   font-size: 3vw;
   color: #FF5880;
@@ -70,7 +69,7 @@ body {
   background-color: #FF5880;
   color: white;
   text-align: center;
-  width: 40%;
+  width: 30%;
   border-radius: 20px;
 }
 
