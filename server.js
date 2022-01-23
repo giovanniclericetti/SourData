@@ -79,7 +79,7 @@ const SerialPort = require('serialport');
 const Delimiter = require('@serialport/parser-delimiter')
 
 // Apri la connessione sulla porta seriale a cui è connesso anche Arduino
-const serial = new SerialPort('/dev/cu.usbmodem21301', {
+const serial = new SerialPort('/dev/cu.usbmodem101', {
     baudRate: 115200
 }, function () {
     console.log('Ready to communicate with Arduino on serial port');

@@ -4,17 +4,17 @@
 body{
   text-align: center;
   font-family: TTNormsBold;
+  margin: 0px;
 }
 
+
 .scritteiniziali{
-  margin-top: 30vh;
-  margin-bottom: 20vh;
+  height: 100vh;
 }
 
 .logoprodotto{
-
+padding-top: 20vh;
 font-family: sourtype;
-height: auto;
 font-size: 4vh;
 color: #FF5880;
 }
@@ -27,16 +27,29 @@ color: #4852FE;
 .compra{
 background-color: #FF5880;
 width: 130px;
-padding: 8px;
-font-size: 12px;
+padding: 10px;
+font-size: 14px;
 color: white;
 cursor: pointer;
+z-index: 10;
 border-radius: 20px;
-margin-top: 20px;}
+margin-top: 40px;}
 
 .compra:hover{
 background-color: #FF92AC;
   transition: 0.3s ease-in-out;
+}
+
+.fotoprodotto{
+  width: 100vw;
+  bottom: -10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.fotoprodotto img{
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .flexcenter{
@@ -58,10 +71,40 @@ justify-content: center;
 /* SCRITTA INTRO */
 
 .scrittaintro{
-  padding: 50px;
+  padding: 150px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: #4852FE;
+  margin: 10px 0 0px 0;
+}
+
+.introtuttapage{
+  margin: 10vh 0 10vh 0;
+  padding: 150px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: #4852FE;
+}
+
+.iconproduct{
+  height: 20vh;
+  padding-bottom: 10px;
+}
+
+.iconproduct img{
+  height: 100%;
+}
+
+.scrittaintro{
+
+}
+
+
+.scrittaintrodopoesploso{
+  padding: 150px 100px 250px 100px ;
   font-size: 25px;
   color: #4852FE;
-  margin: 100px 0 100px 0;
+  background-color: WHITE;
 }
 
 /* VIDEO DUE */
@@ -120,14 +163,22 @@ height: 200vh;}
 .hsContainer {
 	width: 100%;
 	height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hsContent {
-	width: 400px;
-  padding: 300px;
+	width: 45%;
+  padding-top: 40vh;
 	color: white;
 	text-align: center;
 }
+.hsContent h2{
+
+font-size: 35px;
+
+}
+
 
 #scrittascurax2 {
 height: 200vh;}
@@ -157,11 +208,13 @@ height: 200vh;}
 .hsContainerx2 {
 	width: 100%;
 	height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hsContentx2 {
 	width: 400px;
-  padding: 300px;
+  padding-top: 40vh;
 	color: white;
 	text-align: center;
 }
@@ -173,29 +226,23 @@ height: 200vh;}
 
 .instruction{
   width: 100vw;
-  background-color: #4852FE;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  background-color: white;
   color: white;
   font-size: 25px;
+    color: #4852FE;
 }
 
-
-.boxinstruction{
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
 
 
 
 
 .pass{
-  background-color: #4852FE;
-  width: 13%;
-  margin: 10px;
-  font-size: 12px;
-  color: white;
+  background-color: #white;
+  width: 20%;
+  margin: 40px;
+  margin-bottom: 40PX;
+  font-size: 16px;
+  color: #333333;
   font-family: TTNormsRegular;
   text-align: left;
 
@@ -225,13 +272,14 @@ height: 200vh;}
 
 .titolinoinstri{
   font-size: 30px;
-  margin-bottom: 15px;
     font-family: sourtype;
+    color: #4852FE;
 }
 
 .titolinospiega{
   font-family: sourtype;
-  font-size: 15px;
+  font-size: 20px;
+  color: #FF5880;
 }
 
 
@@ -262,17 +310,17 @@ height: 200vh;}
 }
 
 #set-height {
-  height: 100px;
-  background-color: red;
+  max-height: 4000px;
+  display: none;
 }
 
 #v0 {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  position: sticky;
-}
+  width: 90%;
+  margin-left: 0%;
+  height: 90vh;
+  position: sticky;}
 
 
 
@@ -285,120 +333,204 @@ height: 200vh;}
 }
 
 
-#set-height1 {
-    max-height: 6000px;
+
+
+#scrittesuvideo0 {
+  height: 5000px;
     text-align: left;
     position: sticky;
 }
 
-#v1 {
-  top: 0;
-  left: 0;
-  width: 70%;
-  margin-left: 30%;
-  height: 100vh;
-  position: sticky;
+#scrittesurender {
+    text-align: left;
+    position: sticky;
+}
+
+.fraserender{
+  height: 300px;
+background-color: WHITE;
+  width: 20%;
+  padding-TOP: 20px;
+  padding-left: 5vw;
+}
+
+#fraserender1{
+  margin-top: 10vh;
+
+}
+
+#fraserender2{
+  margin-top: 40vh;
+  margin-left: 75vw;
+  padding-left: 0px;
+}
+
+#fraserender3{
+  margin-top: 55vh;
 }
 
 
+.fotosensorlat{
+text-align: left;
+height:60vh;
+}
+
+.fotosensorlat img{
+  height: 100%;
+}
 
 .sensor{
-  height: 300px;
-
-  width: 35%;
-  padding: 20px;
-  padding-left: 10vw;
+  width: 30%;
+border-radius: 20px;
+text-align: left;
+margin-top: -35vh;
+margin-left: 68%;
+display: flex;
 }
 
-#sensor1{
-  margin-top: 80vh;
-
+.rendersingolosensor{
+  border-radius: 20px;
+  height: 18vh;
 }
 
-#sensor2{
-  margin-top: 120vh;
+.rendersingolosensor img{
+  height: 20vh;
+  margin-top: -1vh;
 }
 
-#sensor3{
-  margin-top: 140vh;
-}
+
 
 .sopratitolino{
-  font-size: 15px;
+  font-size: 20px;
   font-family: sourtype;
   color: #FF5880;
-  position: sticky;
-  top: 10px;
-  padding-left: 10vw;
   text-align:left;
-  background-color: white;
-  padding-top: 15vh;
-  padding-bottom: 2vh;
-  z-index: 10;
+}
 
+.sopratitolinor{
+  font-size: 20px;
+  font-family: sourtype;
+  color: #FF5880;
+  text-align:left;
+}
+
+.sensorrender{
+border-radius: 20px;
+}
+
+.sensorrender img{
+  width: 100%;
+  height: 400px;
+}
+
+.coprisensor{
+  width: 30%;
+  background-color: white;
+  height: 400px;
+  position: sticky;
 }
 
 .titolino{
-font-size: 25px;
+font-size: 26px;
 color: #4852FE;
-margin: 2px 0 10px 0;
+margin: 10px 0 10px 0;
 }
 
 .spiegaz{
-  font-size: 12px;
+  font-size: 16px;
   font-family: TTNormsRegular;
   padding-right: 20px;
-  width: 250px;
+  width: 90%;
 }
 
+.modello3d{
+  width: 70%;
+  background-color: #F8F8F8;
+  height: 600px;
+  border-radius: 20px;
+}
 
+.modello3d model-viewer{
+  width: 100%;
+height: 100%;}
+
+.sopratitolointro{
+font-family: sourtype;
+margin-bottom: 10px;
+font-size: 20px;
+color: #FF5880;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  width: 90vw;
+  width: 70vw;
+  height: 60vh;
   position: relative;
   margin: auto;
   border-radius: 20px;
+  background-color: #F8F8F8;
+}
+
+.slideshow-container2 {
+  width: 70vw;
+  margin: auto;
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides1 {
+
+}
+
+.mySlides1 img{
+  border-radius: 20px;
+}
+
+.mySlides2 {
 border-radius: 50px;
 }
 
-.mySlides img{
-  border-radius: 20px;
+.mySlides2 img{
+  border-radius: 20px ;
 }
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top:50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #FF5880;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 10px 0 0 10px ;
+  right: -5%;
+  border-radius:10px;
 }
 
 .prev {
-  left: 0;
-  border-radius: 0 10px 10px 0;
+  left: -5%;
+  border-radius: 10px;
 }
+
+.prev2, .next2 {
+  top:50%;
+
+}
+
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #FF5880;
+  color: white;
 }
 
 /* Caption text */
@@ -458,5 +590,5 @@ border-radius: 50px;
 }
 
 #footerproduct img {
-  width: 100px;
+  width: 140px;
 }
