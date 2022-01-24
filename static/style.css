@@ -122,8 +122,13 @@ body {
 }
 
 .nomiprodotti {
-  width: 20%;
+  width: 22%;
   margin: 10px 10px 0px 10px;
+  text-align: center;
+}
+
+table img {
+  background-color: rgba(56, 66, 241, 1);
 }
 
 .videoteaser {
@@ -429,6 +434,59 @@ body {
   font-size: 10px;
   padding-top: 2%;
 }
+
+.titolidashbox{
+    font-size: 12px;
+}
+
+.thisweek{
+  border-top: solid 2px;
+  border-color: #c3c3c3;
+
+  padding: 5px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.settimanaaperta{
+  color: #FF5880;
+  font-size: 10px;
+}
+
+.guadagnothisweek{
+  text-align: right;
+  margin-left: 108px;
+  font-size: 18px;
+  position: absolute;
+}
+
+.guadagnootherweek{
+  text-align: right;
+  margin-left: 115px;
+  font-size: 16px;
+  padding-top: 2px;
+  position: absolute;}
+
+.hoveropacity{
+  opacity: 0.5;
+}
+
+.hoveropacity:hover{
+  opacity: 1;
+  border-color: #c3c3c3;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.rigawallet{
+  margin-bottom: 10px;
+}
+
+.giorniprecisi{
+font-size: 9px;
+opacity: 0.5;
+font-family: TTNormsBold;
+margin-bottom: 10px;}
 
 #puntodomandasettimana {
   margin-top: -0.2%;
@@ -926,11 +984,12 @@ margin-left: 15px;
 
 #soldicoomy {
   font-size: 25px;
-  padding-top: 7px;
+
 }
 
 #tuttisoldi {
   font-size: 10px;
+  padding-top: 5px;
 }
 
 #totale img {
@@ -956,6 +1015,7 @@ margin-left: 15px;
 
 table td {
   height: 30px;
+  padding-bottom: 5px;
 }
 
 .col1 {
@@ -979,23 +1039,31 @@ table td {
   padding-right: 10%;
 }
 
-#taggatopoopy {
+
+
+#nontaggato{
   opacity: 0.5;
 }
 
-#taggatowheezy {
-  opacity: 0.5;
+#taggato{
+  opacity: 1;
+}
+
+#nontaggato:hover{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .scrittomini {
-  font-size: 8px;
+  font-size: 10px;
   opacity: 0.5;
-  font-family: TTNormsRegular;
+  font-family: TTNormsBold;
 }
 
 .titolinowallet {
   font-size: 10px;
-  color: #FF5880;
+  color: #4852FE;
 }
 
 .illustration img {

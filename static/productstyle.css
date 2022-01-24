@@ -19,7 +19,7 @@ body{
 font-family: sourtype;
 font-size: 3vh;
 margin-bottom: 15px;
-color: #FF5880;
+color: white;
 z-index: 100;
 }
 
@@ -42,20 +42,35 @@ margin-top: 40px;
 font-family: TTNormsBold}
 
 .compra:hover{
-background-color: #FF92AC;
+background-color: PINK;
   transition: 0.3s ease-in-out;
 }
 
 .fotoprodotto{
   width: 100vw;
   bottom: -10px;
-  z-index: 0;
+
 }
 
 .fotoprodotto img{
-  max-width: 100vw;
-  max-height: 100vh;
   min-width: 100vw;
+}
+
+.boxproduct {
+  width: 22%;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F8F4F4 100%);
+  margin: 0px 10px 0px 10px;
+  border-radius: 20px;
+}
+
+.boxproduct img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.boxproduct:hover {
+  box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.2);
+  transition: 0.3s ease-in-out;
 }
 
 .flexcenter{
@@ -67,7 +82,7 @@ justify-content: center;
 
 .videouno{
   background-color: #C4C4C4;
-  width: 100vw;
+  width:100vw;
   height: 500px;
   margin-top: 40px;
   text-align: center;
@@ -110,6 +125,7 @@ justify-content: center;
 
 .introconicon{
 color: #333333;
+width: 50vw;
 }
 
 
@@ -397,8 +413,8 @@ height:60vh;
   width: 30%;
 border-radius: 20px;
 text-align: left;
-margin-top: -35vh;
-margin-left: 68%;
+margin-top: -40vh;
+margin-left: 65%;
 display: flex;
 }
 
@@ -412,6 +428,35 @@ display: flex;
   margin-top: -1vh;
 }
 
+
+.testiintroproduct {
+  padding-left: 8vw;
+  position: absolute;
+  top: 18vw;
+  font-family: TTNormsBlack;
+  font-size: 4vw;
+  color: white;
+  text-align: left;
+}
+
+.testihomeintroproduct {
+  padding-left: 8vw;
+  position: absolute;
+  top: 18vw;
+  font-family: TTNormsBlack;
+  font-size: 50px;
+  color: white;
+  text-align: left;
+}
+
+.testohome1introproduct {
+  width: 50vw;
+}
+
+.testohome2introproduct {
+  margin-top: 2vh;
+  width: 50vw;
+}
 
 
 .sopratitolino{
@@ -445,13 +490,13 @@ border-radius: 20px;
 }
 
 .titolino{
-font-size: 26px;
+font-size: 30px;
 color: #4852FE;
 margin: 10px 0 10px 0;
 }
 
 .spiegaz{
-  font-size: 16px;
+  font-size: 20px;
   font-family: TTNormsRegular;
   padding-right: 20px;
   width: 90%;
@@ -480,6 +525,7 @@ color: #FF5880;
   width: 70vw;
   height: 60vh;
   position: relative;
+    box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.3);
   margin: auto;
   border-radius: 20px;
   background-color: white;
@@ -488,7 +534,7 @@ color: #FF5880;
 .slideshow-container2 {
   width: 70vw;
   margin: auto;
-  box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.3);
+
   position: relative;
   border-radius: 20px;
   background-color: white;
@@ -500,7 +546,7 @@ color: #FF5880;
 }
 
 .mySlides1 img{
-  border-radius: 20px;
+  border-radius:  20px  0 0 20px   ;
 }
 
 .mySlides2 {
@@ -541,7 +587,6 @@ border-radius: 50px;
 
 }
 
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #FF5880;
@@ -560,6 +605,34 @@ border-radius: 50px;
 }
 
 
+.buttonaccount {
+  margin-top: 3vh;
+  font-family: TTNormsBold;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #FF5880;
+  color: white;
+  text-align: center;
+  width: 280px;
+  border-radius: 30px;
+}
+
+.buttonaccount a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonaccount:hover a {
+  text-decoration: none;
+  color: #FF5880;
+  transition: 0.3s ease-in-out;
+}
+
+.buttonaccount:hover {
+  background-color: pink;
+  color: #FF5880;
+  transition: 0.3s ease-in-out;
+}
 
 /* The dots/bullets/indicators */
 .dotimage {
@@ -583,6 +656,10 @@ border-radius: 50px;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.compraproduct{
+  margin-top: 10px;
 }
 
 @-webkit-keyframes fade {
