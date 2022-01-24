@@ -43,12 +43,12 @@ body {
 }
 
 .testihome {
-  padding-left: 10vw;
+  padding-left: 8vw;
   position: absolute;
-  top: 22vw;
+  top: 18vw;
   font-family: TTNormsBlack;
-  font-size: 3vw;
-  color: #FF5880;
+  font-size: 4vw;
+  color: white;
   text-align: left;
 }
 
@@ -113,6 +113,7 @@ body {
 
 .boxhome img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .boxhome:hover {

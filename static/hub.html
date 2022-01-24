@@ -1,166 +1,427 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <head>
   <title> SourData</title>
+  <link rel="stylesheet" type="text/css" href="productstyle.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="hubstyle.css">
+  <script src="script/vendor/modernizr-2.7.1.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="script/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="script/imagesloaded.js"></script>
+  <script src="script/skrollr.js"></script>
+  <script src="script/_main.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="icon" type="image/svg" href="logo/icon.svg">
 </head>
 
 <body>
 
 
-    <div id="navbar">
-      <div id="logo"> <img src="logo/logo.svg" alt="Logo"> </div>
+  <div id="navbar">
+    <div id="logo"> <a href="home.html"> <img src="logo/logo.svg" alt="Logo"> </a> </div>
 
 
-        <div class="li"><a href="hub.html">HUB</a></div>
-        <div class="li"><a href="coomy.html">COOMY</a></div>
-        <div class="li"><a href="wheezy.html">WHEEZY</a></div>
-        <div class="li"><a href="poopy.html">POOPY</a></div>
-        <div class="li dx" id="about"><a href="account.html">ABOUT MARK</a></div>
-        <div class="li dx"><a href="info.html">(?)</a></div>
-        <div class="li dx" id="carrellosksk"> <a> (C) </a>
+    <div class="li"><a href="hub.html">HUB</a></div>
+    <div class="li"><a href="coomy.html">COOMY</a></div>
+    <div class="li"><a href="wheezy.html">WHEEZY</a></div>
+    <div class="li"><a href="poopy.html">POOPY</a></div>
+    <div class="li dx" id="about"><a href="account.html">ABOUT MARK</a></div>
+    <div class="li dx" id="informa"><a href="info.html"> i </a></div>
+    <div class="li dx" id="carrellosksk"> <a> c </a>
 
-        <div  id="shoppingbag" class="hide" > <div id="containertriangolo">  <div id="vuoto"> </div>
-        <div id="triangoloalto"> </div> <div id="vuoto"> </div> </div>
+      <div id="shoppingbag">
+        <div id="containertriangolo">
+          <div id="vuoto"> </div>
+          <div id="triangoloalto"> </div>
+          <div id="vuoto"> </div>
+        </div>
         <div id="triangolino">
-        <div id="empty"> Your Bag is empty. </div>
-        <div id="bag"> <img src="logo/bag.svg"> <div class="scrittacarello"> Bag </div> </div>
-        <div id="saveditems"> <img src="logo/saveditems.svg"> <div class="scrittacarello"> Saved Items </div> </div>
-        <div id="orders"> <img src="logo/orders.svg"> <div class="scrittacarello"> Orders </div> </div> </div>
+          <div id="empty"> Your Bag is empty. </div>
+          <div id="bag"> <img src="logo/bag.png">
+            <div class="scrittacarello"> Bag </div>
+          </div>
+          <div id="saveditems"> <img src="logo/saveditems.png">
+            <div class="scrittacarello"> Saved Items </div>
+          </div>
+          <div id="orders"> <img src="logo/orders.png">
+            <div class="scrittacarello"> Orders </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </div>  </div>  </div>
+
+<div class="scritteiniziali">
+<div class="fotoprodotto"> <img src="logo/sfondohome.png"> </div>
+<div class="logoprodotto"> COOMY </div>
+<div class="fraseiniziale"> Like a second skin. </div>
+<div class="flexcenter">
+<div class="compra" onmouseover="this.innerHTML='SOLD OUT'" onmouseout="this.innerHTML='ADD TO BAG'"> ADD TO BAG </div>
+</div>
+
+
+</div>
+
+
+
+    <div>
+      <p id="time"></p>
+
+      <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload">
+      <source type="video/mp4" src="video/videoscoomy.mp4"></source>
+      </video>
+
+
+    <div id="scrittesurender">
+
+    <div class="fraserender" id="fraserender1">
+    <div class="titolino"> Designed for any hand. </div>
+    <div class="spiegaz"> With Sourcoomy your privacy comes first.
+We will protect your data with advanced security, it will be our little secret.
+    </div>
     </div>
 
+    <div class="fraserender" id="fraserender2">
+      <div class="titolino"> Jokes aside, <br> your data is safe. </div>
+    <div class="spiegaz"> This one is pretty self explanatory, right? Arousal is not a simple thing, therefore we put another sensor to determine how much you’re into what you are doing. The optical infrared light will give us a reading of your BPM.
+      </div>
+      </div>
+
+      <div class="fraserender" id="fraserender3">
+        <div class="titolino"> Check your stats. </div>
+      <div class="spiegaz"> Your data is stored in a platform that lets you know what's going on, 24/7.
+You can check the website from anywhere, it gives you instant visual feedback.
+        </div>
+        </div>
 
     </div>
 
+    <div class="coprisensor"> </div>
+    </div>
 
-<div id="staidavanti">
+    <div id="set-height">
+    </div>
 
-  <div id="bloccozero">
-  <div id="spaziovuoto"> </div> <div class="titoloprodotto" > COOMY </div> <div id="spaziovuoto"> </div>
-</div>
+    <section id="scrittascura" >
+          <div class="bcg">
+            &nbsp;
+          </div>
+          <div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#scrittascura">
+            <div class="hsContainer">
+              <div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#scrittascura">
+                <h2>The new sourcoomy has arrived, a reliable device that detects your masturbation data.
+    Coomy is soft and flexible, you just need to wear it and you can use it at any time.</h2>
 
-  <div id="primoblocco">
-  <div class="titolinosuvideo" > Know what's happening. </div>
-<div class="testinosuvideo"> The device is connected to a platform that lets you know what's going on, 24/7.
-You can check the website from anywhere, it gives you instant visual feedback. </div>
-</div>
+              </div>
+            </div>
+          </div>
 
-<div id="secondoblocco">
-<div class="titolinosuvideo" > Designed for any hand. </div>
-<div class="testinosuvideo"> Sourcoomy is specially designed to fit every hand. It even has an adjustable closure to be as adaptable as possible. </div>
-</div>
+        </section>
 
-<div id="terzoblocco">
-  <div class="titolinosuvideo" > Your data is safer. </div>
-  <div class="testinosuvideo"> With Sourcooomy, your privacy comes first.
-Feel safe knowing that your information is protected using advanced security. </div>
-</div>
 
-<div id="quartoblocco">
-<div id="spaziovuoto"> </div> <div id="frasettacentrata"> The new sourcoomy has arrived, <br> a reliable device that detects your masturbation data.
-Coomy is soft and flexible, you just need to wear it and <br> you can use it at any time. </div>
-<div id="spaziovuoto"> </div>
-</div>
-</div>
+        <div class="scrittaintro">
+          <div class="sopratitolointro" > COOMY COMPONENTS
+          </div>
+        HOW IS IT MADE OF?
+        </div>
+
+
+
+
+  <div>
+
+
+
+
+
+
 
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="logo/coomyfoto1.png" style="width:100%">
+  <div class="mySlides1 fade">
+
+    <div class="fotosensorlat">
+    <img src="logo/coomysensor1.png" >
+  </div>
+
     <div class="sensor" id="sensor1">
 
-        <div class="sopratitolinor" > COOMY SENSORS  </div>
+
+
+      <div>
       <div class="titolino"> ACCELEROMETER </div>
     <div class="spiegaz"> FAP FAP FAP FAP... you want to know how many times?
     This tiny guy will tell you.
     The accellerometer detects movement on three axes. How?
     By calculating accelleration. How? Bunch of boring physics.
       </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="mySlides1 fade">
+    <div class="fotosensorlat">
+    <img src="logo/coomysensor2.png" >
+  </div>
+    <div class="sensor" id="sensor1">
+
+
+
+      <div>
+      <div class="titolino"> HEARTBEAT </div>
+    <div class="spiegaz"> This one is pretty self explanatory, right? Arousal is not a simple thing, therefore we put another sensor to determine how much you’re into what you are doing. The optical infrared light will give us a reading of your BPM.
       </div>
+    </div>
+
+
+  </div>
   </div>
 
+  <div class="mySlides1 fade">
+    <div class="fotosensorlat">
+    <img src="logo/coomysensor3.png" >
+  </div>
+    <div class="sensor" id="sensor1">
 
-  <div class="mySlides fade">
-    <img src="logo/coomyfoto2.png" style="width:100%">
-    <div class="text">FOTO 2</div>
+      <div>
+      <div class="titolino"> GSR </div>
+    <div class="spiegaz"> Even when you think you are not sweating, your sweat glands are actually working. Of course, they work harder when you masturbate, for some people at least.
+The GSR sensor will calculate how excited you can get.
+      </div>
+    </div>
+
+  </div>
   </div>
 
-  <div class="mySlides fade">
-    <img src="logo/coomyfoto3.png" style="width:100% ">
-    <div class="text">Caption Three</div>
-  </div>
+  <div class="mySlides1 fade">
+    <div class="fotosensorlat">
+    <img src="logo/coomysensor2.png" >
+    </div>
+    <div class="sensor" id="sensor1">
 
-  <div class="mySlides fade">
-    <img src="logo/coomyfoto4.png" style="width:100% ">
-    <div class="text">Caption Three</div>
-  </div>
 
-  <div style="text-align:center; margin-top: -100px;">
-    <span class="dotimage" onclick="currentSlide(1)"></span>
-    <span class="dotimage" onclick="currentSlide(2)"></span>
-    <span class="dotimage" onclick="currentSlide(3)"></span>
-    <span class="dotimage" onclick="currentSlide(4)"></span>
+
+      <div>
+      <div class="titolino"> SEEDUINO </div>
+    <div class="spiegaz"> Testo seeduino
+      </div>
+    </div>
+
+
+
+  </div>
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div>
 
 
-<div id="set-height"> </div>
 
-<p id="time"></p>
+<div class="introtuttapage">
 
-<div class="divvideo">
-  <div class="videozero">
-<video id="v0"  tabindex="0" autobuffer="autobuffer" preload="preload">
-<source type="video/mp4" src="video/videoprova.mp4"></source> </video>
-</div> </div>
+<div class="iconproduct flexcenter">
+<img src="logo/papayabanana.png">
+</div>
 
 
-<script id="rendered-js">
+  <div class="sopratitolointro" > ABOUT YOUR DATAS </DIV>
+
+<div class="introconicon" > The new sourcoomy has arrived, a reliable device <br> that detects your masturbation data.
+Coomy is soft <br> and flexible, you just need to wear it and you can use it<br> at any time. The new sourcoomy has arrived, a reliable <br>device that detects your masturbation data.
+</div>
+</div>
+
+
+
+
+<div class="scrittaintro">
+  <div class="sopratitolointro" > COOMY 3D MODEL
+  </div>
+DISCOVER THE PRODUCT
+</div>
+
+
+
+<div class="flexcenter">
+<div class="modello3d flexcenter">
+
+<model-viewer
+alt="3DMODEL"
+src="3dmodel/coomy.glb"
+bounds="tight"
+ar ar-modes="webxr scene-viewer quick-look"
+camera-controls
+environment-image="neutral"
+poster="poster.webp"
+shadow-intensity="1"
+id="reveal"
+loading="eager"
+camera-controls auto-rotate>
+
+</model-viewer>
+
+</div></div>
+
+
+    <div class="instruction">
+
+      <div class="scrittaintro">
+        <div class="sopratitolointro" > INSTRUCTIONS
+        </div>
+    HOW DOES IT WORK?
+      </div>
+
+    <div class="boxinstruction">
+
+<div class="flexcenter">
+
+    <div class="pass"> <div class="titolinoinstri"> 1 .  </div>
+     <img src="logo/instr1b.svg">  <div class="titolinospiega"> UNBOXING </div>
+     Do you see the box? Well... it will not open by itself. Come on! Cheer up! Take out your Coomy! </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 2 .  </div>
+    <img src="logo/instr2b.svg"> <div class="titolinospiega"> WEAR THE DEVICE </div>
+    Well, we know this might sound trivial but of course you should wear Coomy and use it on a daily basis for a while
+    before seeing any results.
+    Let's say at least 2 or 3 days. </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 3 .  </div>
+    <img src="logo/instr3b.svg">
+    <div class="titolinospiega"> USE IT! </div>
+    Did you think we'd do all the work? Luckily this part is up to you, get busy! </div>
+
+</div>
+
+<div class="flexcenter">
+
+    <div class="pass">
+      <div class="titolinoinstri"> 4 .  </div>
+      <img src="logo/instr4b.svg"> <div class="titolinospiega"> EXTRACT MEMORY </div>
+    See that little thingy up there on your wrist with our logo on it? Yep, that's where all of your
+    "sour" data are stored, so yank it out.
+     </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 5 .  </div>
+    <img src="logo/instr5b.svg">
+    <div class="titolinospiega"> INSERT MEMORY </div>
+    You must be wondering what to do with this memory module.
+    Easy, just put it in the little slot on the Piggybank's back.
+     </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 6 . </div> <img src="logo/instr6b.svg">
+    <div class="titolinospiega"> SEND US YOUR DATA </div>
+    Right, now all that's left to do is press that little button next to the slot in order to send us your data.
+    Then we'll pay you, pinky promise.</div>
+
+    </div> </div> </div>
+
+    <div class="scrittaintro">
+      <div class="sopratitolointro" > SOME PHOTOS
+      </div>
+  ABOUT THE PRODUCT
+    </div>
+
+
+    <div class="slideshow-container2">
+      <div class="mySlides2">
+        <img src="logo/coomyfoto1.png" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <img src="logo/coomyfoto2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <img src="logo/coomyfoto3.png" style="width:100%">
+      </div>
+
+
+      <a class="prev prev2" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next next2" onclick="plusSlides(1, 1)">&#10095;</a>
+
+
+    </div>
+
+
+
+    <div id="footerproduct">
+      <img src="logo/powered.svg" alt="Powered">
+
+      <div class="scrittefooter">
+        Copyright © 2021 SourData. All rights reserved.
+        <br> Privacy Policy | Terms of Use | Sales and Refunds | Legal
+      </div>
+
+    </div>     </div>
+
+<script>
 
 var frameNumber = 0, // start video at frame 0
     // lower numbers = faster playback
-    playbackConst = 800,
+    playbackConst1 = 1000,
     // get page height from video duration
-    setHeight = document.getElementById("set-height"),
+    setHeight1 = document.getElementById("set-height"),
     // select video element
-    vid = document.getElementById('v0');
+    vid1 = document.getElementById('v0');
     // var vid = $('#v0')[0]; // jquery option
 
 // dynamically set the page height according to video length
-vid.addEventListener('loadedmetadata', function() {
-  setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+vid1.addEventListener('loadedmetadata', function() {
+  setHeight1.style.height = Math.floor(vid1.duration) * playbackConst1 + "px";
 });
 
 // Use requestAnimationFrame for smooth playback
-function scrollPlay(){
-  var frameNumber  = window.pageYOffset/playbackConst;
-  vid.currentTime  = frameNumber;
-  window.requestAnimationFrame(scrollPlay);
+function scrollPlay1(){
+  var frameNumber  = window.pageYOffset/playbackConst1;
+  vid1.currentTime  = frameNumber;
+  window.requestAnimationFrame(scrollPlay1);
 }
 
-window.requestAnimationFrame(scrollPlay);
+window.requestAnimationFrame(scrollPlay1);
+
+
+
+
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+
+  x[slideIndex[no]-1].style.display = "block";
+
+
+
+}
 
 </script>
-
-
-
-
-
-
-
-
 
 </body>
 </html>
