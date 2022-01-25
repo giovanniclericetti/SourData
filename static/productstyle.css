@@ -23,6 +23,10 @@ color: white;
 z-index: 100;
 }
 
+.logoprodotto img{
+  width: 8vw;
+}
+
 .fraseiniziale{
 font-size: 50px;
 color: #4852FE;
@@ -402,19 +406,33 @@ background-color: WHITE;
 
 .fotosensorlat{
 text-align: left;
-height:60vh;
+background-color: #e3e3e3;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .fotosensorlat img{
-  height: 100%;
+  width: 100%;
+}
+
+.titolinosensor{
+font-size: 25px;
+color: #FF5880;
+margin: 10px 0 10px 0;
+}
+
+.iconsensor{
+  background-color: green;
+  height: 15vh;
+  width: 50vh;
 }
 
 .sensor{
-  width: 30%;
+  width: 90%;
 border-radius: 20px;
 text-align: left;
-margin-top: -40vh;
-margin-left: 65%;
+margin-top: 20px;
 display: flex;
 }
 
@@ -522,13 +540,10 @@ color: #FF5880;
 
 /* Slideshow container */
 .slideshow-container {
-  width: 70vw;
-  height: 60vh;
+  width: 50vw;
   position: relative;
-    box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.3);
   margin: auto;
   border-radius: 20px;
-  background-color: white;
 }
 
 .slideshow-container2 {
@@ -560,7 +575,7 @@ border-radius: 50px;
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top:50%;
+  top:38%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -573,11 +588,21 @@ border-radius: 50px;
 
 /* Position the "next button" to the right */
 .next {
-  right: -5%;
+  right: -10%;
   border-radius:10px;
 }
 
 .prev {
+  left: -10%;
+  border-radius: 10px;
+}
+
+.next2 {
+  right: -5%;
+  border-radius:10px;
+}
+
+.prev2 {
   left: -5%;
   border-radius: 10px;
 }

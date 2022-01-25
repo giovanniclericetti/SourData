@@ -1085,6 +1085,14 @@ table td {
   color: #333333;
 }
 
+.commentinix {
+  margin-top: 0.5vw;
+  font-size: 12px;
+  font-family: TTNormsBold;
+  line-height: 1.1;
+  color: #333333;
+}
+
 #punteggio {
   display: flex;
   text-align: center;
