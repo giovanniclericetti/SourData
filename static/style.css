@@ -646,6 +646,10 @@ margin-bottom: 10px;}
   display: inline-block;
 }
 
+.dotactive{
+background-color: rgba(72, 82, 254, 1);  
+}
+
 .dot1 {
   height: 20px;
   width: 20px;
@@ -1075,6 +1079,14 @@ table td {
   font-size: 30px;
   color: #4852FE;
   font-family: TTNormsBold;
+
+}
+
+.commentonipoopy {
+  font-size: 30px;
+  color: #4852FE;
+  font-family: TTNormsBold;
+  margin-top: -5px;
 }
 
 .commentini {
@@ -1086,8 +1098,8 @@ table td {
 }
 
 .commentinix {
-  margin-top: 0.5vw;
-  font-size: 12px;
+  margin-top: 0.1vw;
+  font-size: 13px;
   font-family: TTNormsBold;
   line-height: 1.1;
   color: #333333;
