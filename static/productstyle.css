@@ -7,6 +7,9 @@ body{
   margin: 0px;
 }
 
+.hidden{
+display: none;
+}
 
 .scritteiniziali{
   height: 100vh;
@@ -52,7 +55,7 @@ background-color: PINK;
 
 .fotoprodotto{
   width: 100vw;
-  bottom: -10px;
+  margin-bottom: -10px;
 
 }
 
@@ -207,12 +210,20 @@ height: 200vh;
 	color: white;
 	text-align: center;
 }
+
+.contenthub{
+  width: 60%;
+}
+
 .hsContent h2{
 
 font-size: 35px;
 
 }
 
+.introalpoopy{
+  width: 55%;
+}
 
 #scrittascurax2 {
 height: 200vh;}

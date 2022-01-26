@@ -239,11 +239,18 @@ table img {
   text-decoration: none;
 }
 
+.active a {
+  background-color: white;
+  color: #FF5880;
+}
+
 .li a:hover {
   background-color: white;
   color: #FF5880;
   transition: 0.3s ease-in-out;
 }
+
+
 
 #about {
   margin-right: 55px;
@@ -647,7 +654,7 @@ margin-bottom: 10px;}
 }
 
 .dotactive{
-background-color: rgba(72, 82, 254, 1);  
+background-color: rgba(72, 82, 254, 1);
 }
 
 .dot1 {

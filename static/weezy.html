@@ -5,39 +5,448 @@
 
 <head>
   <title> SourData</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="productstyle.css">
-
-  <script src="vendor/modernizr-2.7.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script/vendor/modernizr-2.7.1.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="vendor/jquery-1.9.1.min.js"><\/script>')</script>
-  <script src="imagesloaded.js"></script>
-  <script src="skrollr.js"></script>
-  <script src="_main.js"></script>
-
+  <script>window.jQuery || document.write('<script src="script/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="script/imagesloaded.js"></script>
+  <script src="script/skrollr.js"></script>
+  <script src="script/_main.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="icon" type="image/svg" href="logo/icon.svg">
-
-
 </head>
 
 <body>
-  <div class="tipregovai">
-  CIAOOO brunooo
+
+
+  <div id="navbar">
+    <div id="logo"> <a href="home.html"> <img src="logo/logo.svg" alt="Logo"> </a> </div>
+
+
+    <div class="li"><a href="hub.html">HUB</a></div>
+    <div class="li"><a href="coomy.html">COOMY</a></div>
+
+    <div class="li "><a href="poopy.html">POOPY</a></div>
+        <div class="li active"><a href="weezy.html">WEEZY</a></div>
+    <div class="li dx" id="about"><a href="account.html">ABOUT MARK</a></div>
+    <div class="li dx" id="informa"><a href="info.html"> i </a></div>
+    <div class="li dx" id="carrellosksk"> <a> c </a>
+
+      <div id="shoppingbag">
+        <div id="containertriangolo">
+          <div id="vuoto"> </div>
+          <div id="triangoloalto"> </div>
+          <div id="vuoto"> </div>
+        </div>
+        <div id="triangolino">
+          <div id="empty"> Your Bag is empty. </div>
+          <div id="bag"> <img src="logo/bag.png">
+            <div class="scrittacarello"> Bag </div>
+          </div>
+          <div id="saveditems"> <img src="logo/saveditems.png">
+            <div class="scrittacarello"> Saved Items </div>
+          </div>
+          <div id="orders"> <img src="logo/orders.png">
+            <div class="scrittacarello"> Orders </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
-<div class="containerinstruction">
-
-<div class="primobox"> </div>
-<div class="secondobox" data-anchor-target="containerinstruction"> </div>
-<div class="terzobox"> </div>
 
 
+  <div class="fotoprodotto"> <img src="logo/fotocoomyinizio.png"> </div>
+
+  <div class="scritteiniziali">
+
+    <div class="testihomeintroproduct">
+    <div class="logoprodotto"> <img src="logo/weezyloghino.png"> </div>
+      <div class="testohome1introproduct"> FRASE PER WEEZY <br>  FRASES FOT SWEEZY:
+
+ </div>
+    <div class="testohome2introproduct"> BREATH SMARTER. </div>
+    <div class="compra" onmouseover="this.innerHTML='SOLD OUT'" onmouseout="this.innerHTML='ADD TO BAG'"> ADD TO BAG </div>
+    </div>
+</div>
+
+
+
+
+<section id="scrittascura" >
+      <div class="bcg">
+        &nbsp;
+      </div>
+      <div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#scrittascura">
+        <div class="hsContainer">
+          <div class="hsContent introalpoopy" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#scrittascura">
+            <h2>Nowadays we know too well the functionality <BR> of a face mask,
+              but this is far from a normal mask.
+              Weezy quickly detects the quality of your breath
+              without being invasive around your mouth.</h2>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div>
+      <p id="time"></p>
+
+      <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload">
+      <source type="video/mp4" src="video/videoscoomy.mp4"></source>
+      </video>
+
+
+    <div id="scrittesurender">
+
+    <div class="fraserender" id="fraserender1">
+    <div class="titolino"> Comfort </div>
+    <div class="spiegaz">
+      You just need to breathe while wearing weezy and the built-in sensor will detect all the useful data.
+      Weezy is made out of an elastic and extensible cloth to best adapt to the shape of your face. The ergonomic design of these washable masks allows them to stay in the best position on your face to catch your breath.
+
+    </div>
+    </div>
+
+    <div class="fraserender" id="fraserender2">
+      <div class="titolino"> Security </div>
+    <div class="spiegaz"> Safety first! Data obtained with weezy are stored in the memory module on your face. Only after wearing the mask for a bunch of minutes you'll be able to take it off and upload the data. There's no need for long monologues while wearing it, what are waiting for? Extract that memory.
+      </div>
+      </div>
+
+      <div class="fraserender" id="fraserender3">
+        <div class="titolino"> Check your stats. </div>
+      <div class="spiegaz"> Weezy might turn out to be a real friend since the data collected will be visible right after uploading. You'll be able to check on the quality of your breath and maybe save you from unpleasant situations... like, who wants to kiss someone with bad breath? Your data is always available on a platform that lets you know what's going on, 24/7. You can check the website from anywhere (anywhere with an internet connection, of course).
+        </div>
+        </div>
+
+        <div class="fraserender" id="fraserender2">
+          <div class="titolino"> SD Memory </div>
+        <div class="spiegaz"> Thanks to your efforts, the sd will collect all your data in no time. do not worry, it does everything by itself, you have the only task of transferring it and inserting it inside the hub.
+          </div>
+          </div>
+
+    </div>
+
+    <div class="coprisensor"> </div>
+    </div>
+
+
+
+    <div class="slideshow-container hidden">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides1 fade">
+
+        <div class="fotosensorlat">
+        <img src="logo/coomysensor1.png" >
+      </div>
+
+        <div class="sensor" id="sensor1">
+
+
+
+          <div>
+          <div class="titolinosensor"> ACCELEROMETER </div>
+        <div class="spiegaz"> FAP FAP FAP FAP... you want to know how many times?
+        This tiny guy will tell you.
+        The accellerometer detects movement on three axes. How?
+        By calculating accelleration. How? Bunch of boring physics.
+          </div>
+        </div>
+    <div class="iconsensor"> </div>
+      </div>
+      </div>
+
+
+      <div class="mySlides1 fade">
+        <div class="fotosensorlat">
+        <img src="logo/coomysensor2.png" >
+      </div>
+        <div class="sensor" id="sensor1">
+
+
+
+          <div>
+          <div class="titolinosensor"> HEARTBEAT </div>
+        <div class="spiegaz"> This one is pretty self explanatory, right? Arousal is not a simple thing, therefore we put another sensor to determine how much you’re into what you are doing. The optical infrared light will give us a reading of your BPM.
+          </div>
+        </div>
+    <div class="iconsensor"> </div>
+
+
+      </div>
+      </div>
+
+      <div class="mySlides1 fade">
+        <div class="fotosensorlat">
+        <img src="logo/coomysensor3.png" >
+      </div>
+        <div class="sensor" id="sensor1">
+
+          <div>
+          <div class="titolinosensor"> GSR </div>
+        <div class="spiegaz"> Even when you think you are not sweating, your sweat glands are actually working. Of course, they work harder when you masturbate, for some people at least.
+    The GSR sensor will calculate how excited you can get.
+          </div>
+        </div>
+    <div class="iconsensor"> </div>
+      </div>
+      </div>
+
+      <div class="mySlides1 fade">
+        <div class="fotosensorlat">
+        <img src="logo/coomysensor4.png" >
+        </div>
+        <div class="sensor" id="sensor1">
+
+
+
+          <div>
+          <div class="titolinosensor"> SEEDUINO </div>
+        <div class="spiegaz"> the seeeduino is a micro-controller. It is the brain of the device, what it does is elaborate all the data from all the sensors and send it to memory module.
+          </div>
+        </div>
+    <div class="iconsensor"> </div>
+
+
+      </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+
+
+
+<div class="introtuttapage">
+
+<div class="iconproduct flexcenter">
+<img src="logo/wheezy.png">
+</div>
+
+
+  <div class="sopratitolointro" > ABOUT YOUR DATA </DIV>
+<div class="flexcenter">
+<div class="introconicon" > All the data stored in the Memory module, once transfered, will be accessible on your personal dashboard. Have you ever wanted to keep track and compare your sessions? No? Really?  Well whatever, now you can.
+</div>
+</div>
+<div class="flexcenter">
+<div class="buttonaccount"> <a href="accountweezy.html"> DISCOVER YOUR PERSONAL DATA </a> </div>
+</div>
+</div>
+
+
+
+
+<div class="scrittaintro">
+  <div class="sopratitolointro" > 3D INTERACTIVE MODEL
   </div>
+DISCOVER THE PRODUCT
+</div>
 
-  <div class="tipregovai">
-  CIAOOO brunooo
-  </div>
+
+
+<div class="flexcenter">
+<div class="modello3d flexcenter">
+
+<model-viewer
+alt="3DMODEL"
+src="3dmodel/coomy.glb"
+bounds="tight"
+ar ar-modes="webxr scene-viewer quick-look"
+camera-controls
+environment-image="neutral"
+poster="poster.webp"
+shadow-intensity="1"
+id="reveal"
+loading="eager"
+camera-controls auto-rotate>
+
+</model-viewer>
+
+</div></div>
+
+
+    <div class="instruction">
+
+      <div class="scrittaintro">
+        <div class="sopratitolointro" > INSTRUCTIONS
+        </div>
+    HOW DOES IT WORK?
+      </div>
+
+    <div class="boxinstruction">
+
+<div class="flexcenter">
+
+    <div class="pass"> <div class="titolinoinstri"> 1 .  </div>
+     <img src="logo/instrw1.svg">  <div class="titolinospiega"> UNBOXING </div>
+     Do you see the box?
+Well... it will not open by itself. Come on! Cheer up! Take out your Poopy! </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 2 .  </div>
+    <img src="logo/instrw2.svg"> <div class="titolinospiega"> WEAR THE DEVICE </div>
+    Well, we know this might sound trivial but of course you should wear Coomy and use it on a daily basis for a while
+    before seeing any results.
+    Let's say at least 2 or 3 days. </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 3 .  </div>
+    <img src="logo/instrw3.svg">
+    <div class="titolinospiega"> USE IT! </div>
+    Did you think we'd do all the work? Luckily this part is up to you, get busy! </div>
+
+</div>
+
+<div class="flexcenter">
+
+    <div class="pass">
+      <div class="titolinoinstri"> 4 .  </div>
+      <img src="logo/instrw4.svg"> <div class="titolinospiega"> EXTRACT MEMORY </div>
+    See that little thingy up there on your wrist with our logo on it? Yep, that's where all of your
+    "sour" data are stored, so yank it out.
+     </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 5 .  </div>
+    <img src="logo/instr5b.svg">
+    <div class="titolinospiega"> INSERT MEMORY </div>
+    You must be wondering what to do with this memory module.
+    Easy, just put it in the little slot on the Piggybank's back.
+     </div>
+
+    <div class="pass"> <div class="titolinoinstri"> 6 . </div> <img src="logo/instr6b.svg">
+    <div class="titolinospiega"> SEND US YOUR DATA </div>
+    Right, now all that's left to do is press that little button next to the slot in order to send us your data.
+    Then we'll pay you, pinky promise.</div>
+
+    </div> </div> </div>
+
+    <div class="scrittaintro">
+      <div class="sopratitolointro" > PHOTO GALLERY
+      </div>
+  SEE IT FOR REAL
+    </div>
+
+
+    <div class="slideshow-container2">
+      <div class="mySlides2">
+        <img src="logo/coomyfoto1.png" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <img src="logo/coomyfoto2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <img src="logo/coomyfoto3.png" style="width:100%">
+      </div>
+
+
+      <a class="prev prev2" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next next2" onclick="plusSlides(1, 1)">&#10095;</a>
+
+
+    </div>
+
+    <div class="scrittaintro">
+      <div class="sopratitolointro" > FOR A COMPLETE EXPERIENCE
+      </div>
+  RELATED PRODUCT
+    </div>
+
+    <div class="prodotti">
+    <div class="boxproduct"> <a href="hub.html"> <img src="logo/hubproduct.png"> </a> </div>
+    <div class="boxproduct"> <a href="coomy.html"><img src="logo/coomyproduct.png"> </a> </div>
+    <div class="boxproduct"> <a href="weezy.html"><img src="logo/weezyproduct.png"> </a> </div>
+
+    </div>
+    <div class="flex">
+    <div class="nomiprodotti "> FAZZOLETTI      <div class= "flexcenter"> <div class="compra compraproduct" onmouseover="this.innerHTML='SOLD OUT'" onmouseout="this.innerHTML='ADD TO BAG'"> ADD TO BAG </div> </div>
+ </div>
+    <div class="nomiprodotti"> CANDELA    <div class= "flexcenter"> <div class="compra compraproduct" onmouseover="this.innerHTML='SOLD OUT'" onmouseout="this.innerHTML='ADD TO BAG'"> ADD TO BAG </div> </div>
+ </div>
+    <div class="nomiprodotti"> NON LO SO     <div class= "flexcenter"> <div class="compra compraproduct" onmouseover="this.innerHTML='SOLD OUT'" onmouseout="this.innerHTML='ADD TO BAG'"> ADD TO BAG </div>  </div>
+ </div>
+
+    </div>
+
+
+
+    <div id="footerproduct">
+      <img src="logo/powered.svg" alt="Powered">
+
+      <div class="scrittefooter">
+        Copyright © 2021 SourData. All rights reserved.
+        <br> Privacy Policy | Terms of Use | Sales and Refunds | Legal
+      </div>
+
+    </div>     </div>
+
+<script>
+
+var frameNumber = 0, // start video at frame 0
+    // lower numbers = faster playback
+    playbackConst1 = 1000,
+    // get page height from video duration
+    setHeight1 = document.getElementById("set-height"),
+    // select video element
+    vid1 = document.getElementById('v0');
+    // var vid = $('#v0')[0]; // jquery option
+
+// dynamically set the page height according to video length
+vid1.addEventListener('loadedmetadata', function() {
+  setHeight1.style.height = Math.floor(vid1.duration) * playbackConst1 + "px";
+});
+
+// Use requestAnimationFrame for smooth playback
+function scrollPlay1(){
+  var frameNumber  = window.pageYOffset/playbackConst1;
+  vid1.currentTime  = frameNumber;
+  window.requestAnimationFrame(scrollPlay1);
+}
+
+window.requestAnimationFrame(scrollPlay1);
+
+
+
+
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+
+  x[slideIndex[no]-1].style.display = "block";
+
+
+
+}
+
+</script>
 
 </body>
 </html>
