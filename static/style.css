@@ -235,7 +235,10 @@ table img {
   display: block;
   color: white;
   text-align: center;
-  padding: 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
 }
 
@@ -302,7 +305,9 @@ table img {
 #informa {
   font-family: souricon;
   font-size: 35px;
-}
+  background-color: pink;
+  line-height: 13px;}
+
 
 #carrellosksk a {
   padding-top: 15px;
@@ -773,63 +778,66 @@ background-color: rgba(72, 82, 254, 1);
 }
 
 #infogiorno1 {
-  top: 55%;
-  right: 90%;
-  left: -2%;
+  top: 56%;
+  right: 92%;
+  left: -1.5%;
 }
 
 #infogiorno2 {
-  top: 30%;
+  top: 28%;
   right: 90%;
-  left: 12%;
+  left: 12.5%;
 }
 
 #infogiorno3 {
   top: 79%;
-  right: 90%;
-  left: 12%;
+  right: 92%;
+  left: 15%;
 }
 
 #infogiorno4 {
   top: 58%;
   right: 90%;
-  left: 26.5%;
+  left: 27%;
 }
+
+#infogiorno5 {
+  top: 10%;
+  right: 37%;
+  left: 41%;
+}
+
 
 #infogiorno6 {
   top: 39%;
   right: 90%;
-  left: 55%;
+  left: 57%;
 }
 
 #infogiorno7 {
   top: 75%;
   right: 90%;
-  left: 55%;
+  left: 57%;
 }
 
 #infogiorno8 {
-  top: 59%;
+  top: 60%;
   right: 100%;
-  left: 69.4%;
+  left: 69.7%;
 }
 
-#infogiorno9 {
-  top: 59%;
-  right: 90%;
-  left: 69.3%;
-}
+
 
 #infogiorno9 {
-  top: 10%;
+  top: 11%;
   right: 90%;
-  left: 83.8%;
+  left: 84.2%;
 }
 
 #infogiornoesame {
   top: 40%;
   right: 90%;
-  left: 83.8%;
+  left: 84%;
 }
 
 .orario {
