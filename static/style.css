@@ -132,7 +132,7 @@ table img {
 }
 
 .videoteaser {
-  width: 70%;
+  width: 85%;
   margin: 0px 10px 0px 10px;
   border-radius: 20px;
   overflow: hidden;
@@ -353,7 +353,7 @@ table img {
 .scrittacarello {
   margin-left: 10px;
   font-family: 'TTNormsRegular';
-  line-height: 2.3;
+  margin-top: 15px;
 }
 
 .scrittacarello:hover {
@@ -946,7 +946,7 @@ background-color: rgba(72, 82, 254, 1);
   width: 190px;
   height: 100px;
   margin: 10px;
-  margin-top: 15px;
+  margin-top: 5px;
 
 }
 
@@ -968,8 +968,8 @@ margin-left: 15px;
 }
 
 .iconetesto img{
-  width: 25px;
-  padding: 0px 5px 5px 10px;
+  width: 30px;
+  padding: 0px 5px 3px 5px;
 
 }
 

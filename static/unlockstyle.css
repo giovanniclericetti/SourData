@@ -45,6 +45,7 @@ body {
   color: #FF5880;
   margin: 0 20px 0 20px;
   width: 200px;
+  cursor: pointer;
 }
 
 .answer a {
@@ -53,10 +54,6 @@ body {
 }
 
 
-.answer:hover {
-
-  transition: 0.3s ease-in-out;
-}
 
 .white {
   color: white;
@@ -81,13 +78,7 @@ body {
 
 #yesanswer:hover+#yessticker {
   opacity: 1;
-  display: block;
-}
-
-#yessticker:hover {
-  cursor: pointer;
-}
-
+  display: block;}
 
 
 #nosticker {
@@ -100,11 +91,14 @@ body {
     text-decoration: none;
 }
 
+.notallowed{
+  cursor: not-allowed;
+}
 
 #noanswer:hover+#nosticker {
   opacity: 1;
   display: block;
-    cursor: not-allowed;
+
 
 }
 
