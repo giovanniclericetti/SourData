@@ -478,12 +478,13 @@ display: flex;
 }
 
 .testohome1introproduct {
-  width: 50vw;
+  font-size: 3vw;
 }
 
 .testohome2introproduct {
   margin-top: 2vh;
   width: 50vw;
+  font-size: 3vw;
 }
 
 

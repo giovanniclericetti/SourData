@@ -122,9 +122,14 @@ body {
 }
 
 .nomiprodotti {
-  width: 22%;
+  width: 20%;
   margin: 10px 10px 0px 10px;
   text-align: center;
+  justify-content: center;
+}
+
+.nomiprodotti img{
+  height: 30px;
 }
 
 table img {
