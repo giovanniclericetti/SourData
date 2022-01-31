@@ -55,12 +55,16 @@ background-color: PINK;
 
 .fotoprodotto{
   width: 100vw;
+  min-height: 100vh;
   margin-bottom: -10px;
 
 }
 
 .fotoprodotto img{
-  min-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  object-position: right;
+  object-fit: cover;
 }
 
 .boxproduct {
@@ -132,7 +136,7 @@ justify-content: center;
 
 .introconicon{
 color: #333333;
-width: 50vw;
+width: 46vw;
 }
 
 
@@ -393,9 +397,19 @@ height: 200vh;}
 
 .fraserender{
   height: 300px;
-  width: 20%;
   padding-TOP: 20px;
   padding-left: 5vw;
+  width: 20vw;
+}
+
+.flexaml{
+  margin: 0 0 0 5vw;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
 }
 
 #fraserender1{
@@ -404,9 +418,9 @@ height: 200vh;}
 }
 
 #fraserender2{
-  margin-top: 40vh;
-  margin-left: 75vw;
   padding-left: 0px;
+  width: 20vw;
+  margin-right: 10vw;
 }
 
 #fraserender3{
@@ -705,6 +719,7 @@ border-radius: 50px;
   from {opacity: .4}
   to {opacity: 1}
 }
+
 
 #footerproduct{
   left: 0;

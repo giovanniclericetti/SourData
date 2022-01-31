@@ -61,34 +61,37 @@ body {
   width: 35vw;
 }
 
+
+
 .buttonabout {
-  margin-top: 3vh;
+  margin-top: 4vh;
   font-family: TTNormsBold;
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px;
   background-color: #FF5880;
   color: white;
   text-align: center;
-  width: 30%;
   border-radius: 20px;
+  width: 30%;
 }
 
-.buttonabout a {
+.buttonabout {
   text-decoration: none;
   color: white;
 }
 
-.buttonabout:hover a {
+.buttonabout:hover {
   text-decoration: none;
   color: #FF5880;
   transition: 0.3s ease-in-out;
+  background-color: white;
 }
 
-.buttonabout:hover {
-  background-color: white;
-  color: #FF5880;
-  transition: 0.3s ease-in-out;
+a {
+  text-decoration: none;
 }
+
+
 
 .prodotti {
   width: 100vw;
@@ -97,6 +100,8 @@ body {
   justify-content: center;
   display: flex;
 }
+
+
 
 .boxvideoteaser {
   width: 100vw;
@@ -111,13 +116,14 @@ body {
   border-radius: 20px;
 }
 
+
 .boxhome img {
   width: 100%;
+  object-fit: cover;
   border-radius: 20px;
 }
 
 .boxhome:hover {
-  box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.2);
   transition: 0.3s ease-in-out;
 }
 
@@ -130,6 +136,10 @@ body {
 
 .nomiprodotti img{
   height: 30px;
+}
+
+.nomiprodotti img:hover{
+    box-shadow: 0px 0px 20px rgba(97, 104, 225, 0.3);
 }
 
 table img {
@@ -190,12 +200,11 @@ table img {
 
 #footerhome {
   left: 0;
-  bottom: 0;
+  margin-top: 300px;
   width: 100%;
   padding: 20px 20px 20px 0px;
   color: white;
   text-align: center;
-  margin-top: 4vw;
 }
 
 #footerhome img {
@@ -210,7 +219,11 @@ table img {
   font-family: TTNormsRegular;
 }
 
-#accountpage {}
+
+#accountpage {
+  width: 1090px;
+
+}
 
 #centrapage {
   display: flex;
@@ -284,16 +297,25 @@ table img {
   cursor: pointer;
 }
 
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 20px 20px 0px;
-  color: white;
-  text-align: center;
-  margin-top: 3vw;
+#logo .attivo{
+  opacity: 1;
 }
+
+  #footerdash{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 20px 20px 0px;
+    color: white;
+    text-align: center;
+    text-align: center;
+
+  }
+
+  #footerdash img {
+    width: 140px;
+  }
 
 #shoppingbag {
   position: absolute;
@@ -307,11 +329,16 @@ table img {
   height: 100px;
 }
 
-#informa {
+#informa{
   font-family: souricon;
   font-size: 35px;
-  background-color: pink;
-  line-height: 13px;}
+  line-height: 13.5px;
+
+}
+
+
+
+
 
 
 #carrellosksk a {
@@ -358,7 +385,7 @@ table img {
 .scrittacarello {
   margin-left: 10px;
   font-family: 'TTNormsRegular';
-  margin-top: 15px;
+  margin-top: 9px;
 }
 
 .scrittacarello:hover {
@@ -453,7 +480,7 @@ table img {
 }
 
 .titolidashbox{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .thisweek{
@@ -467,20 +494,20 @@ table img {
 
 .settimanaaperta{
   color: #FF5880;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .guadagnothisweek{
   text-align: right;
-  margin-left: 108px;
+  margin-left: 135px;
   font-size: 18px;
   position: absolute;
 }
 
 .guadagnootherweek{
   text-align: right;
-  margin-left: 115px;
-  font-size: 16px;
+  margin-left: 135px;
+  font-size: 18px;
   padding-top: 2px;
   position: absolute;}
 
@@ -500,7 +527,7 @@ table img {
 }
 
 .giorniprecisi{
-font-size: 9px;
+font-size: 11px;
 opacity: 0.5;
 font-family: TTNormsBold;
 margin-bottom: 10px;}
@@ -536,20 +563,22 @@ margin-bottom: 10px;}
 
 #primacolonna {
   margin-right: 2%;
-  width: 25%;
+  width:  400px;
+
 }
 
 #partedx {
-  width: 75%;
+  width: 1000px;
   margin-bottom: 0px;
-  height: 500px;
+  height: 600px;
+
 }
 
 #sceglioggetto {
   margin-right: 0px;
   display: flex;
   margin-bottom: 20px;
-  height: 65px;
+  height: 75px;
 }
 
 #tagselected {
@@ -590,9 +619,10 @@ margin-bottom: 10px;}
 }
 
 #settimana {
-  width: 440px;
+  width: 540px;
   margin-right: 20px;
   padding: 2%;
+  padding-bottom: 30px;
 }
 
 .sottodiviso {
@@ -625,6 +655,8 @@ margin-bottom: 10px;}
   padding-top: 4px;
   font-family: TTNormsBold;
   color: rgba(72, 82, 254, 1);
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .vuotoinizio {
@@ -637,21 +669,23 @@ margin-bottom: 10px;}
 }
 
 .orarigiusti {
-  width: 7%;
+  width: 40px;
   justify-content: center;
   display: grid;
+  font-size: 12px;
   grid-template-columns: 100%;
   grid-template-rows: 10% 20% 20% 20% 20%;
   height: 100%;
   font-family: TTNormsRegular;
   align-items: center;
   padding-left: 3%;
+  color: rgba(72, 82, 254, 1);
 }
 
 .ore {
   font-family: TTNormsRegular;
   text-align: left;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .dot {
@@ -748,7 +782,7 @@ background-color: rgba(72, 82, 254, 1);
 
 .dot .infogiorno {
   visibility: hidden;
-  width: 80px;
+  width:100px;
   background-color: #FF5880;
   color: #fff;
   text-align: center;
@@ -756,7 +790,7 @@ background-color: rgba(72, 82, 254, 1);
   padding: 5px 0;
   position: absolute;
   font-family: TTNormsRegular;
-  font-size: 10px;
+  font-size: 12px;
   top: 10%;
   right: 37%;
   left: 40.5%;
@@ -780,6 +814,7 @@ background-color: rgba(72, 82, 254, 1);
 
 .accountballoon {
   margin-top: 8%;
+
 }
 
 #infogiorno1 {
@@ -858,34 +893,34 @@ background-color: rgba(72, 82, 254, 1);
 }
 
 #commento {
-  width: 210px;
+  width: 237px;
   margin-right: 0px;
   padding-top: 0px;
-  height: 200px;
+  height: 250px;
 }
 
 #partesotto {
   display: flex;
   margin-bottom: 0px;
-  height: 200px;
-  width: 700px;
+  height: 250px;
+
   justify-content: center;
 }
 
 #duration {
-  width: 150px;
+  width: 180px;
   margin-right: 20px;
   color: #FF5880;
 }
 
 #hornymeter {
-  width: 150px;
+  width: 180px;
   margin-right: 20px;
   color: #FF5880;
 }
 
 #pacing {
-  width: 360px;
+  width: 430px;
   margin: 0px;
   color: #FF5880;
   overflow-x: scroll;
@@ -894,8 +929,7 @@ background-color: rgba(72, 82, 254, 1);
 
 #graficocommentino {
   display: flex;
-  width: 700px;
-  height: 200px;
+  height: 250px;
   margin-bottom: 20px;
   margin-right: 0px;
 }
@@ -912,13 +946,13 @@ background-color: rgba(72, 82, 254, 1);
 }
 
 #profilephoto img {
-  border-radius: 50%;
+  border-radius: 30%;
   border-color: #FF5880;
   border-style: solid;
   overflow: hidden;
   border-width: 2px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 
 }
 
@@ -927,28 +961,28 @@ background-color: rgba(72, 82, 254, 1);
 }
 
 #name {
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   font-family: TTNormsBold;
-  margin: 8px;
+  margin: 10px;
   margin-top: 12px;
   color: #FF5880;
 }
 
 #sudilui {
-  font-size: 11px;
+  font-size: 15px;
   text-align: left;
   font-family: TTNormsRegular;
   color: #FF5880;
   margin: -10px;
   margin-bottom: 0px;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 
 
 .altodxbasso {
-  width: 190px;
+  width: 200px;
   height: 100px;
   margin: 10px;
   margin-top: 5px;
@@ -960,7 +994,9 @@ text-align: left;
 display: flex;
 align-items: center;
 font-family: TTNormsRegular;
-margin-left: 15px;
+margin: 5px;
+margin-left: 12px;
+font-size: 12px;
 
 }
 
@@ -973,7 +1009,7 @@ margin-left: 15px;
 }
 
 .iconetesto img{
-  width: 30px;
+  width: 40px;
   padding: 0px 5px 3px 5px;
 
 }
@@ -997,7 +1033,8 @@ margin-left: 15px;
   padding: 20px;
   padding-top: 10px;
   padding-bottom: 2%;
-  height: 320px;
+  height: 410px;
+  width: 200px;
 }
 
 #totale {
@@ -1007,19 +1044,19 @@ margin-left: 15px;
 }
 
 #soldicoomy {
-  font-size: 25px;
-
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 #tuttisoldi {
-  font-size: 10px;
+  font-size: 12px;
   padding-top: 5px;
 }
 
 #totale img {
-  height: 60px;
+  height: 80px;
   margin-left: 8%;
-  margin-top: -2%;
+  margin-top: -5%;
 }
 
 #titletransaction {
@@ -1031,19 +1068,19 @@ margin-left: 15px;
 
 #table {
   width: 100%;
-  height: 230px;
+  height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
   text-align: left;
 }
 
 table td {
-  height: 30px;
+  height: 40px;
   padding-bottom: 5px;
 }
 
 .col1 {
-  width: 1%;
+  width: 10%;
   padding-right: 0;
 }
 
@@ -1059,8 +1096,9 @@ table td {
 
 .col3 {
   width: 1vw;
-  padding-left: 20%;
+  padding-left: 13%;
   padding-right: 10%;
+  font-size: 12px;
 }
 
 
@@ -1080,46 +1118,46 @@ table td {
 }
 
 .scrittomini {
-  font-size: 10px;
+  font-size: 11px;
   opacity: 0.5;
   font-family: TTNormsBold;
 }
 
 .titolinowallet {
-  font-size: 10px;
+  font-size: 14px;
   color: #4852FE;
 }
 
 .illustration img {
-  margin-top: 6%;
-  max-height: 55px;
+  margin-top: 1%;
+  max-height: 80px;
 }
 
 .commentoni {
-  font-size: 30px;
+  font-size: 33px;
   color: #4852FE;
   font-family: TTNormsBold;
 
 }
 
 .commentonipoopy {
-  font-size: 30px;
+  font-size: 25px;
   color: #4852FE;
   font-family: TTNormsBold;
-  margin-top: -5px;
+  margin-top: 0px;
 }
 
 .commentini {
   margin-top: 0.5vw;
-  font-size: 14px;
+  font-size: 18px;
   font-family: TTNormsBold;
   line-height: 1.1;
   color: #333333;
 }
 
 .commentinix {
-  margin-top: 0.1vw;
-  font-size: 13px;
+    margin-top: 0.1vw;
+  font-size: 18px;
   font-family: TTNormsBold;
   line-height: 1.1;
   color: #333333;
@@ -1181,7 +1219,7 @@ canvas{
 
 
 .container {
-  margin: 30px auto;
+
   padding: 120px;
 }
 
@@ -1190,6 +1228,8 @@ canvas{
   border: 1px solid red;
   position: relative;
 }
+
+
 
 .content {
   overflow: auto;

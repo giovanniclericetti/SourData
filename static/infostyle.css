@@ -54,7 +54,7 @@ margin-right: 25vw;
   float: right;
   margin-right: 4px;
   font-family: souricon;
-  font-size: 30px;
+  font-size: 35px;
   color: #C4C4C4;
   position: relative;
   padding-bottom: 0;
@@ -70,13 +70,13 @@ margin-right: 25vw;
   display: flex;
   padding-right: 20px;
   position: absolute;
-  margin-left: 110px;
-  margin-top: -19px;
+  margin-left: 130px;
+  margin-top: -27px;
 }
 
 .infosuquesto .balloonsottoinfo {
   visibility: hidden;
-  width: 160px;
+  width: 200px;
   background-color: #FF5880;
   color: #fff;
   text-align: center;
@@ -84,12 +84,12 @@ margin-right: 25vw;
   padding: 5px 0;
   position: absolute;
   font-family: TTNormsRegular;
-  font-size: 10px;
+  font-size: 12px;
 
   z-index: 1;
-  top: 150%;
+  top: 120%;
   margin: 0px;
-  margin-left: -650%;
+  margin-left: -655%;
 }
 
 .infosuquesto .balloonsottoinfo::after {
@@ -125,15 +125,20 @@ margin-right: 25vw;
 }
 
 .accountballoon{
-  margin-top: 8%;
+  margin-top: 15%;
 }
 
 #sopradeidue{
-
   margin-left: 90%;
 }
 
+#sopradeidue2{
+  margin-left: 100%;
+}
 
+.iconefforts{
+  margin-top: -3px;
+}
 
 .spazioballon{
 background-color: red;
@@ -147,6 +152,12 @@ background-color: red;
   margin-bottom: 2vw;
   display: flex;
 }
+
+.iconepacing{
+  margin-top: -80px;
+  margin-left: 200px;
+}
+
 
 .boxinosottosx{
   width: 24vw;
@@ -177,4 +188,17 @@ background-color: red;
 
 #footerinfo img {
   width: 10vw;
+}
+
+#footerproduct{
+  left: 0;
+  margin-top: 300px;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  color: white;
+  text-align: center;
+}
+
+#footerproduct img {
+  width: 140px;
 }
