@@ -5,6 +5,7 @@ const socket = io();
 let maxHeart = 0;
 let accellerometerArray = [];
 
+
 // ascolta il saluto del server
 socket.on('greetings', (message) => {
 
@@ -28,25 +29,74 @@ socket.on('accellerometer', (message) => {
 });
 
 // galvanico
-socket.on('galvanic', (message) => {
-    console.log('gal', message);
+socket.on('hornymeter', (message) => {
+
+       nuovovalore = (Math.floor(Math.random() * 45) /10)+2;
+
+    console.log('hm', message);
 });
 
 // battito
-socket.on('heart', (message) => {
-    if (+message > maxHeart) maxHeart = +message;
-    console.log('nuovo battito massimo: ', maxHeart);
+socket.on('time', (message) => {
+    duration = message;
+    console.log('time', message);
 });
+
 
 //document.querySelector('button').addEventListener('click', updateValues);
 
+
 function updateValues () {
+
+    document.getElementById("dotesame").style.display == "block";
+
     // aggiorna il valore dell'accelerometro
     //document.querySelector('#accVal').textContent = accellerometerArray.join(', ');
     myChart.data.datasets[0].data = accellerometerArray;
     //myChart.options.scales.x.labels = accellerometerArray.map(function(value, index){return index * 10});
     myChart.options.scales.y.max = Math.max(...accellerometerArray) + 10;
     myChart.update();
+
+    if((nuovovalore>=6.5)&&(nuovovalore<=10))
+    document.getElementById('frasepunteggio').innerText = 'Must have been a while, huh?';
+
+    if((nuovovalore>=4)&&(nuovovalore<6.5))
+    document.getElementById('frasepunteggio').innerText = 'It was an honest job';
+
+    if((nuovovalore>=0)&&(nuovovalore<4))
+    document.getElementById('frasepunteggio').innerText = 'Neither great nor terrible';
+
+    document.getElementById('punteggiocambia').innerText = nuovovalore;
+
+    document.getElementById('freccina').innerText = 'a';
+    document.getElementById('numerinoscritto').innerText = ' ';
+
+    if((duration>=1)&&(duration<=60)){
+    document.getElementById('minuti-performance').innerText = 1;
+    document.getElementById('fraseminuti').innerText = 'Brief but fierce';}
+
+    if((duration>60)&&(duration<=120)){
+    document.getElementById('minuti-performance').innerText = 2;
+        document.getElementById('fraseminuti').innerText = 'Brief but fierce';}
+
+    if((duration>120)&&(duration<=180)){
+    document.getElementById('minuti-performance').innerText = 3;
+      document.getElementById('fraseminuti').innerText = 'Brief but fierce';}
+
+    if((duration>180)&&(duration<=240)){
+    document.getElementById('minuti-performance').innerText = 4;
+      document.getElementById('fraseminuti').innerText = 'Brief but fierce';}
+
+    if((duration>240)&&(duration<=300)){
+    document.getElementById('minuti-performance').innerText = 5;
+      document.getElementById('fraseminuti').innerText = 'Neither great nor terrible';}
+
+    if((duration>300)&&(duration<=360)){
+    document.getElementById('minuti-performance').innerText = 6;
+      document.getElementById('fraseminuti').innerText = 'Neither great nor terrible';}
+
+
+
 }
 
 

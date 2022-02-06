@@ -88,7 +88,7 @@ const serial = new SerialPort('/dev/cu.usbmodem101', {
 const parser = serial.pipe(new Delimiter({ delimiter: '\n' }))
 
 // Apri la connessione sulla porta seriale a cui è connesso anche Arduino
-const serial2 = new SerialPort('/dev/cu.usbmodem21201', {
+const serial2 = new SerialPort('/dev/cu.usbmodem1401', {
     baudRate: 115200
 }, function () {
     console.log('Ready to communicate with Arduino on serial port');
@@ -116,11 +116,12 @@ io.on('connection', (socket) => {
 
         if (message.includes('ACC')) {
             socket.emit('accellerometer', message.substring(4)); // estrai i valori dalla stringa partendo dall'ottavo carattere (escludi b-u-t-t-o-n-:-spazio)
-        } else if (message.includes('GSR')) {
-            socket.emit('galvanic', message.substring(4)); // estrai i valori dalla stringa partendo dall'ottavo carattere (escludi b-u-t-t-o-n-:-spazio)
-        } else if (message.includes('BPM')) {
-            socket.emit('heart', message.substring(4)); // estrai i valori dalla stringa partendo dall'ottavo carattere (escludi b-u-t-t-o-n-:-spazio)
+        } else if (message.includes('hm')) {
+            socket.emit('hornymeter', message.substring(3)); // estrai i valori dalla stringa partendo dall'ottavo carattere (escludi b-u-t-t-o-n-:-spazio)
         }
+       else if (message.includes('tempo')) {
+          socket.emit('time', message.substring(6)); // estrai i valori dalla stringa partendo dall'ottavo carattere (escludi b-u-t-t-o-n-:-spazio)
+      }
     });
 
     // quando ricevi dati da Arduino, reagisci

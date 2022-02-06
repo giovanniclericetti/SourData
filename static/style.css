@@ -762,10 +762,11 @@ background-color: rgba(72, 82, 254, 1);
   margin-top: 40%;
   background-color: rgba(255,88,128, 0.7);
   border: 2px solid rgba(255,88,128, 1);
+
 }
 
 #dotesame{
-  visibility: visible;
+    display: none;
 }
 
 .dot:hover {

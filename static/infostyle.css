@@ -202,3 +202,117 @@ background-color: red;
 #footerproduct img {
   width: 140px;
 }
+
+#footerinfo{
+  left: 0;
+  margin-top: 150px;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  color: white;
+  text-align: center;
+}
+
+#footerinfo img {
+  width: 140px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("logo/fotogruppo.jpg");
+
+  /* Set a specific height */
+  min-height: 96vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.infocontainer{
+  height: 250vh;
+  font-size: 14px;
+}
+
+.scrollinfo img{
+margin-top: 1.2vh;
+width: 30px;
+
+}
+
+.paragraforender{
+  width: 60vw;
+  text-align: left;
+  margin-left: 10vw;
+  margin-top: 10vw;
+}
+
+.backstagecointainer{
+  margin-left: 10vw;
+  margin-top: 3vw;
+  width: 80vw;
+}
+
+.videobackstage{
+  border-radius: 30px;
+}
+
+.peoplecontainer{
+  width: 25.3vw;;
+  height: 450px;
+  margin: 1vw;
+  margin-top: 2vw;
+}
+
+.peoplecontainer img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.rigasottofoto{
+margin-top: 2vw
+}
+
+.loghiringraziamenti{
+  display: flex;
+}
+
+.loghiringraziamenti img{
+  height: 8vw;
+  margin-right: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.soprannome{
+    font-size: 22px;
+    margin-top: 1vw;
+    font-family: TTNormsBold;
+    color: #FF5880;
+}
+
+.veronome{
+  margin-top: 0.3vw;
+    font-size: 20px;
+    font-family: TTNormsRegular;
+}
+
+.profiloinsta{
+    font-size: 16px;
+    margin-top: 0.3vw;
+    font-family: TTNormsRegular;
+    color: #FF5880;
+}
+
+.profiloinsta a{
+  text-decoration: none;
+  color: #FF5880;
+}
+
+.profiloinsta a:hover{
+  text-decoration: none;
+  font-family: TTNormsBold;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
